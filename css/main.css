@@ -1,0 +1,68 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* 
+MOBILE NAV FUNCTION
+*/
+#widescreenNav{
+    display: none;
+}
+#mobileHeader{
+    display: flex;
+    flex-direction: row;
+}
+#mobileNav{
+    display: flex;
+    flex-direction: column;
+}
+#mobileNavToggleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#mobileLinksContainer{
+    display: flex;
+    flex-direction: column;
+    transition: height 300ms;
+    height: fit-content;
+    overflow: hidden; 
+}
+#mobileLinksContainer a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#mobileLinksContainer:not(.show){
+    height: 0;
+}
+
+
+@media screen and (min-width:768px){
+    #mobileHeader{
+        display: none;
+    }
+    #widescreenNav{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        gap: 1rem;
+    }
+    #wrapper{
+        flex-direction: row;
+    }
+    #widescreenNav a{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Off-Bank Home</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <div id="mobileHeader">
+                <div id="mobileNav">
+                    <div id="mobileNavToggleContainer">
+                        <button type="button" id="mobileNavToggle" onclick="toggleMobileLinks()">=</button>
+                        <p>[H]</p>
+                    </div>
+                    <div id="mobileLinksContainer">
+                        <a href="/posts/">Posts <span>[P]</span></a>
+                        <a href="#">Events <span>[E]</span></a>
+                        <a href="#">About <span>[A]</span></a>
+                    </div>
+                </div>
+                <p id="pageDisplay">Home</p>
+            </div>
+            <div id="widescreenNav">
+                <a href="#" class="active">Home <span>[H]</span></a>
+                <a href="/posts/">Posts <span>[P]</span></a>
+                <a href="#">Events <span>[E]</span></a>
+                <a href="#">About <span>[A]</span></a>
+            </div>
+        </nav>
+        <main>
+            <h1>Off-Bank</h1>
+            <section id="news">
+                <h2>News</h2>
+                <sub>Stay caught up on upcoming events</sub>
+                <div id="newsDisplay"></div>
+            </section>
+            <section id="recentPosts">
+                <h2>Recent Posts</h2>
+                <div id="recentPostsDisplay"></div>
+            </section>
+            <section id="artistHighlight">
+                <h2>Artist Highlight</h2>
+                <sub>Here’s an artist we want to highlight</sub>
+                <div id="artistHighlightDisplay"></div>
+            </section>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>
