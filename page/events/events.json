@@ -1,8 +1,45 @@
 [
+    
+    {
+        "date": "03-11-2026",
+        "title": "STATIC",
+        "venue": "House of Targ",
+        "price": 15
+    },
+    {
+        "date": "03-12-2026",
+        "title": "Holy Void",
+        "venue": "House of Targ",
+        "price": 15
+    },
+    {
+        "date": "03-14-2026",
+        "title": "Ska Night",
+        "venue": "House of Targ",
+        "price": 20
+    },
+    {
+        "date": "03-19-2026",
+        "title": "Sub Sun",
+        "venue": "House of Targ",
+        "price": 15
+    },
+    {
+        "date": "03-27-2026",
+        "title": "Sun Dried Flies",
+        "venue": "LIVE! on Elgin",
+        "price": 20
+    },
     {
         "date": "03-28-2026",
         "title": "Passenger Princess",
         "venue": "House of Targ",
         "price": 15
+    },
+    {
+        "date": "03-28-2026",
+        "title": "Ottawa Trans Library Benefit",
+        "venue": "LIVE! on Elgin",
+        "price": 20
     }
 ]
