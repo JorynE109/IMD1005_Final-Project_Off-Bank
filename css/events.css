@@ -1,0 +1,14 @@
+#calendarDisplay{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+#calendarDisplay.listview{
+    display: flex;
+    flex-direction: column;
+}
+.hidden{
+    display: none;
+}
+#calendarDisplay .calDay{
+    height: clamp(100px, 400px);
+}

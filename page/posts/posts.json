@@ -1,0 +1,46 @@
+{
+    "artist":
+    [
+        {
+            "src": "/img/artist/def.png",
+            "title": "Test Artist",
+            "category": "artist",
+            "highlight": "This is the highlight sentence",
+            "path": "/post/testpost/",
+            "content": "This is the content of the entire article."
+        }
+    ],
+    "album":
+    [
+        {
+            "src": "/img/album/def.png",
+            "title": "Test Album",
+            "category": "album",
+            "highlight": "This is the highlight sentence",
+            "path": "/post/testpost/",
+            "content": "This is the content of the entire article."
+        }
+    ],
+    "venue":
+    [
+        {
+            "src": "/img/venue/def.png",
+            "title": "Test Venue",
+            "category": "venue",
+            "highlight": "This is the highlight sentence",
+            "path": "/post/testpost/",
+            "content": "This is the content of the entire article."
+        }
+    ],
+    "article":
+    [
+        {
+            "src": "/img/article/def.png",
+            "title": "Test Article",
+            "category": "article",
+            "highlight": "This is the highlight sentence",
+            "path": "/post/testpost/",
+            "content": "This is the content of the entire article."
+        }
+    ]
+}
