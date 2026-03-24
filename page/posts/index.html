@@ -6,7 +6,7 @@
     <title>Off-Bank Posts</title>
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/posts.css">
 </head>
 <body>
     <div id="wrapper">
@@ -15,21 +15,22 @@
                 <div id="mobileNav">
                     <div id="mobileNavToggleContainer">
                         <button type="button" id="mobileNavToggle" onclick="toggleMobileLinks()">=</button>
-                        <p>[H]</p>
+                        <p>[P]</p>
                     </div>
                     <div id="mobileLinksContainer">
-                        <a href="#">Posts <span>[P]</span></a>
-                        <a href="#">Posts <span>[P]</span></a>
-                        <a href="#">Posts <span>[P]</span></a>
+                        <a href="/">Home <span>[H]</span></a>
+                        <a href="/page/events/">Events <span>[E]</span></a>
+                        <a href="/page/about/">About <span>[A]</span></a>
                     </div>
                 </div>
                 <p id="pageDisplay">Home</p>
             </div>
             <div id="widescreenNav">
-                <a href="/" class="active">Home <span>[H]</span></a>
-                <a href="#">Posts <span>[P]</span></a>
-                <a href="#">Events <span>[E]</span></a>
-                <a href="#">About <span>[A]</span></a>
+                <!-- the spans gotta be switched for icons, keep class the same -->
+                <a href="/" class="active"><span class="navtitle">Home</span><span class="navicon">[H]</span></a>
+                <a href="/page/posts/"><span class="navtitle">Posts</span><span class="navicon">[P]</span></a>
+                <a href="/page/events/"><span class="navtitle">Events</span><span class="navicon">[E]</span></a>
+                <a href="/page/about/"><span class="navtitle">About</span><span class="navicon">[A]</span></a>
             </div>
         </nav>
         <main>
