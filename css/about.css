@@ -1,11 +1,12 @@
 body {
+    gap: 0.5rem;
+    padding: 1rem;
     background-color: var(--purple);
 }
 
 main {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: column;
     background-color: var(--purple);
 }
 
@@ -16,8 +17,8 @@ main {
     align-items: center;
     gap: 20px;
     height: fit-content;
-    margin: 10px 60px;
-    padding: 3rem;
+    margin: 25px 5px;
+    padding: 2rem;
     border: 1px solid var(--white);
     border-radius: 20px;
     line-height: 1.5;
@@ -31,7 +32,8 @@ p {
 
 .form-section {
     flex: 1;
-    margin: 20px 45px;
+    margin: 25px 5px;
+    height: fit-content;
     border: 15px double var(--purple);
     border-radius: 20px;
     background-color: var(--blue);
@@ -52,12 +54,9 @@ label {
     font-family: "aw-conqueror-sans", sans-serif;
     font-weight: bold;
 }
-#formHolder{
-    display: grid;
-    grid-template-columns: 1fr;
-}
+
 form {
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -92,8 +91,17 @@ input:active, input:focus {
 .hidden {
     display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     #formHolder {
         grid-template-columns: 1fr;
+    }
+    main{
+        flex-direction: row;
+    }
+    .ab-div {
+        margin: 20px 40px;
+    }
+    .form-section {
+        margin: 25px 40px;
     }
 }
