@@ -39,12 +39,16 @@ h2{
 }
 h3{
     font-size: calc(1rem * pow(1.3, 3));
+    font-family: "chainprinter", sans-serif;
 }
 h4{
     font-size: calc(1rem * pow(1.3, 2));
 }
 h5{
     font-size: calc(1rem * pow(1.3, 1));
+}
+p {
+    font-family: "chainprinter", sans-serif;
 }
 sub{
     font-size: 16px;

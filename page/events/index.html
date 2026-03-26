@@ -41,17 +41,23 @@
             <h1>Events</h1>
             <div id="viewSelectionHolder">
                 <p>Select View</p>
-                <button class="viewSelect" onclick="populateCalDiv(1)">List</button>
-                <button class="viewSelect" onclick="populateCalDiv(0)">Calendar</button>
+                <div class="selectButtonDiv">
+                    <button class="viewSelect" onclick="populateCalDiv(1)">List</button>
+                    <button class="viewSelect" onclick="populateCalDiv(0)">Calendar</button>
+                </div>
             </div>
             <div id="eventsCalendar">
                 <div id="eventsCalHead">
-                    <h2 id="calHeading">Month</h2>
-                    <p id="yearText">Year</p>
-                    <div id="monthSelectButtonsHolder">
-                        <button class="monthSelect" onclick="changeMonth(-1)">Previous Month</button>
-                        <button class="monthSelect" onclick="changeMonth(0)">Current Month</button>
-                        <button class="monthSelect" onclick="changeMonth(1)">Next Month</button>
+                    <div class="calMonthSelectDiv">
+                        <div class="monthYearDisplay">
+                            <h2 id="calHeading">Month</h2>
+                            <p id="yearText">Year</p>
+                        </div>
+                        <div id="monthSelectButtonsHolder">
+                            <button class="monthSelect" onclick="changeMonth(-1)">Previous Month</button>
+                            <button class="monthSelect" onclick="changeMonth(0)">Current Month</button>
+                            <button class="monthSelect" onclick="changeMonth(1)">Next Month</button>
+                        </div>
                     </div>
                     <div id="calendarDisplay"></div>
                     <div id="eventsList"></div>
