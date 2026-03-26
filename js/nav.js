@@ -33,14 +33,14 @@ const pageIcons = {
     "events": `<img class="navicon" src="/img/icon/icons8-calendar-24.png">`,
     "about": `<img class="navicon" src="/img/icon/icons8-smile-24.png">`
 }
-
+const hamburgerIcon = `<img class="navHamburger" src="/img/icon/icons8-hamburger.svg">`
 
 const $navHTML = `
 <div id="mobileHeader">
     <div id="mobileNav">
         <div id="mobileNavToggleContainer">
-            <button type="button" id="mobileNavToggle" onclick="toggleMobileLinks()">=</button>
-            <p>${pageIcons[page]}</p>
+            <button type="button" id="mobileNavToggle" onclick="toggleMobileLinks()">${hamburgerIcon}</button>
+            <div id="pageDisplay">${pageIcons[page]}${page}</div>
         </div>
         <div id="mobileLinksContainer">
             <a href="/"><span class="navtitle">Home</span><img class="navicon" src="/img/icon/icons8-home.svg"></a>
@@ -49,7 +49,6 @@ const $navHTML = `
             <a href="/page/about/"><span class="navtitle">About</span><img class="navicon" src="/img/icon/icons8-smile-24.png"></a>
         </div>
     </div>
-    <p id="pageDisplay">${page}</p>
 </div>
 <div id="widescreenNav">
     <!-- the spans gotta be switched for icons, keep class the same -->

@@ -1,0 +1,17 @@
+#eventInfo{
+    max-width: 100%;
+}
+.evPoster{
+    width:80%;
+    margin: auto;
+}
+.evPoster img{
+    width: 100%;
+}
+h2{
+    text-align: center;
+}
+.infoText{
+    width: 100%;
+    text-align: center;
+}

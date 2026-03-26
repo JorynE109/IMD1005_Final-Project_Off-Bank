@@ -32,37 +32,37 @@
     },
     {
         "date": "03-28-2026",
-        "title": "Passenger Princess",
+        "title": "Targ Punk Show",
         "venue": "House of Targ",
         "price": 15,
-        "poster": "url",
-        "link": "google.com",
+        "poster": "/img/event/2026-03-27_Taxi-Girls.webp",
+        "link": "https://www.eventbrite.com/e/taxi-girls-mtl-w-subtrash-ciggie-the-darts-passenger-prince-tickets-1983050253691?aff=oddtdtcreator",
         "artistInfo": [
             {
                 "name": "Taxi Girls",
                 "genre": "Punk n Roll",
-                "photo": "",
+                "photo": "/img/artist/taxi-girls.webp",
                 "url": "https://linktr.ee/taxigirlsmontreal",
                 "desc": ""
             },
             {
                 "name": "Subtrash Music",
                 "genre": "Punk",
-                "photo": "",
+                "photo": "/img/artist/subtrash.webp",
                 "url": "https://www.instagram.com/subtrashmusic/",
                 "desc": "La Pêche hillbilly punk weirdos"
             },
             {
                 "name": "Ciggie and the Darts",
                 "genre": "Punk n Roll",
-                "photo": "",
+                "photo": "/img/artist/ciggie-and-the-darts.webp",
                 "url": "https://ciggieandthedarts.bandcamp.com/album/pils-sessions-session-04-08-21?from=embed",
                 "desc": "Blending classic rock n roll riffs with the frantic speed and energy of punk rock."
             },
             {
                 "name": "Passenger Princess",
                 "genre": "Punk",
-                "photo": "/img/artist/passenger-princess.png",
+                "photo": "/img/artist/passenger-princess.webp",
                 "url": "https://passengerprincess.bandcamp.com/album/this-is-our-free-bird?from=embed",
                 "desc": ""
             }
