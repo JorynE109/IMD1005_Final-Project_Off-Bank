@@ -6,7 +6,7 @@
     <title>Event</title>
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/event-post.css">
 </head>
 <body>
     <div id="wrapper">
@@ -50,13 +50,17 @@
                     eventHTML.push(`
                     <h2>${ev.title}</h2>
                     <div id="eventInfo">
-                        <p class="date">${ev.date}</p>
-                        <p class="venue">${ev.venue}</p>
-                        <p class="price">Cover: ${ev.price}</p>
-                        <a class="link" href="${ev.link}">Get Tickets</a>
+                        <div class="infoText">
+                            <p class="date">${ev.date}</p>
+                            <p class="venue">${ev.venue}</p>
+                            <p class="price">Cover: ${ev.price}</p>
+                            <a class="link" href="${ev.link}">Get Tickets</a>
+                        </div>
+                        <div class="evPoster">
+                            <img src="${ev.poster}">
+                        </div>
                     </div>
                     <div id="eventBody">
-                        <img src="${ev.poster}">
                         <div id="artists">
                     `)
                     if (ev.artistInfo)
