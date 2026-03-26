@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <div id="wrapper">
+        <nav></nav>
+        <main>
+            <!-- <h1>Event</h1> -->
+            <div id="evDisplay"></div>
+        </main>
+    </div>
+    <script src="/js/nav.js"></script>
+    <script>
+        const $evDisp = document.getElementById('evDisplay');
+        let params = new URL(document.location.toString()).searchParams;
+        console.log(params);
+        let evDate = params.get("date");
+        let evTitle = params.get("title");
+        console.log(evDate + " & " + evTitle);
+
+        window.addEventListener('load', (event) => {
+            if($evDisp)
+            {
+                console.log("loading event");
+                loadEvent();
+            }
+        });
+        async function loadEvent(){
+            const res = await fetch('/page/events/events.json');
+            const data = await res.json();
+            let events;
+            if(res.ok) events = data;
+            console.log(events);
+            
+            updateEvDisp(events);
+        }
+        function updateEvDisp(events){
+            console.log("updating events");
+            let eventHTML = [];
+            events.forEach(ev => {
+                if(ev.title == evTitle && ev.date == evDate)
+                {
+                    eventHTML.push(`
+                    <h2>${ev.title}</h2>
+                    <div id="eventInfo">
+                        <p class="date">${ev.date}</p>
+                        <p class="venue">${ev.venue}</p>
+                        <p class="price">Cover: ${ev.price}</p>
+                    </div>
+                    <div id="eventBody">
+                        <img src="${ev.poster}">
+                        <div id="artists">
+                    `)
+                    if (ev.artistInfo)
+                    {
+                        ev.artistInfo.forEach(artist=>{
+                            eventHTML.push(`
+                                <div class="artistInfo">
+                                    <h3 class="artistName">${artist.name}</h3>
+                                    <img src="${artist.photo}">
+                                    <p class="artistGenre">${artist.genre}</p>
+                                    <p class="artistDesc">${artist.desc}</p>
+                                    <a href="${artist.url}">See More</a>
+                                </div>
+                            `)
+                        });
+                    }
+                    eventHTML.push(`</div>`);
+                    //may have to format date prettier and venue goes to the venue article on posts
+                }
+            });
+            $evDisp.innerHTML = eventHTML.join("");
+        }
+    </script>
+</body>
+</html>

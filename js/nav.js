@@ -1,19 +1,28 @@
-let url = (window.location.href).split('/');
-for (let i = 0; i < url.length; i++)
-{
-    if (url[i] == "")
-    {
-        for (let r = i; r < url.length; r++)
-        {
-            url[r] = url[r + 1];
-        }
-        url.pop();
-    }
-}
-console.log(url);
+let url = new URL(window.location.href);
 
-let page = url[url.length - 1];
-if (page != "posts" && page != "events" && page != "about" )
+// for (let i = 0; i < url.length; i++)
+// {
+//     if (url[i] == "")
+//     {
+//         for (let r = i; r < url.length; r++)
+//         {
+//             url[r] = url[r + 1];
+//         }
+//         url.pop();
+//     }
+// }
+// console.log(url);
+
+// let page = url[url.length - 1];
+
+let page = url.pathname.split("/");
+page.pop()
+console.log(page);
+
+page = page[page.length - 1];
+console.log(page);
+
+if (page == "")
 {
     page = "home";
 }
