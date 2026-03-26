@@ -1,60 +1,92 @@
+body {
+    background-color: var(--purple);
+}
+
 main {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 20px;
+    background-color: var(--purple);
 }
 
 .ab-div {
-    flex: 1;
-    margin: 20px 70px;
-    padding: 50px;
-    border: 1px solid black;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: fit-content;
+    margin: 10px 60px;
+    padding: 3rem;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    line-height: 1.5;
+    background-color: var(--white);
+}
+p {
+    font-family: "chainprinter", sans-serif;
+    font-size: 18px;
+    text-align: justify;
 }
 
 .form-section {
     flex: 1;
-    margin: 20px 70px;
-    border: 1px solid black;
+    margin: 20px 45px;
+    border: 15px double var(--purple);
+    border-radius: 20px;
+    background-color: var(--blue);
+}
+h2 {
+    text-align: center;
+}
+label {
+    font-family: "chainprinter", sans-serif;
+    font-size: 18px;
 }
 #purpose-options-holder {
     display: flex;
     flex-direction: column;
-     line-height: 1.5;
+    line-height: 1.5;
+}
+#purpose-options-holder label {
+    font-family: "aw-conqueror-sans", sans-serif;
+    font-weight: bold;
 }
 #formHolder{
     display: grid;
     grid-template-columns: 1fr;
 }
 form {
-    padding: 3rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .form-question {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 3px;
 }
 input, textarea {
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.5;
-    font-family: "chainprinter", sans-serif;
-    border: 2px solid black;
+    font-family: "aw-conqueror-sans", sans-serif;
+    border: none;
+    border-radius: 5px;
     outline: none;
 }
 
 input:active, input:focus {
-    border: solid 2px red;
+    border: 0.5px solid var(--purple);
 }
 #stringLength.invalid {
-    color: rgb(173, 12, 12);
+    color: var(--red);
 }
 .error-message {
     font-size: 0.8rem;
-    background-color: rgb(173, 12, 12);
+    background-color: var(--red);
     padding: 3px;
 }
 .hidden {

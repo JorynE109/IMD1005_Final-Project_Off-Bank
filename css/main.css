@@ -29,10 +29,12 @@ main{
 }
 h1{
     font-size: calc(1rem * pow(1.3, 5));
+    font-family: "cotton", sans-serif;
 
 }
 h2{
     font-size: calc(1rem * pow(1.3, 4));
+    font-family: "cotton", sans-serif;
 
 }
 h3{
@@ -87,7 +89,9 @@ nav{
 #mobileLinksContainer:not(.show){
     height: 0;
 }
-
+.eventDispSm{
+    cursor: pointer;
+}
 
 @media screen and (min-width:768px){
     body{
