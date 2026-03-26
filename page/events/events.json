@@ -34,7 +34,39 @@
         "date": "03-28-2026",
         "title": "Passenger Princess",
         "venue": "House of Targ",
-        "price": 15
+        "price": 15,
+        "poster": "url",
+        "link": "google.com",
+        "artistInfo": [
+            {
+                "name": "Taxi Girls",
+                "genre": "Punk n Roll",
+                "photo": "",
+                "url": "https://linktr.ee/taxigirlsmontreal",
+                "desc": ""
+            },
+            {
+                "name": "Subtrash Music",
+                "genre": "Punk",
+                "photo": "",
+                "url": "https://www.instagram.com/subtrashmusic/",
+                "desc": "La Pêche hillbilly punk weirdos"
+            },
+            {
+                "name": "Ciggie and the Darts",
+                "genre": "Punk n Roll",
+                "photo": "",
+                "url": "https://ciggieandthedarts.bandcamp.com/album/pils-sessions-session-04-08-21?from=embed",
+                "desc": "Blending classic rock n roll riffs with the frantic speed and energy of punk rock."
+            },
+            {
+                "name": "Passenger Princess",
+                "genre": "Punk",
+                "photo": "/img/artist/passenger-princess.png",
+                "url": "https://passengerprincess.bandcamp.com/album/this-is-our-free-bird?from=embed",
+                "desc": ""
+            }
+        ]
     },
     {
         "date": "03-28-2026",
