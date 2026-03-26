@@ -36,6 +36,7 @@
         "venue": "House of Targ",
         "price": 15,
         "poster": "url",
+        "link": "google.com",
         "artistInfo": [
             {
                 "name": "Taxi Girls",
