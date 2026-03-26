@@ -1,0 +1,18 @@
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.ab-div {
+    flex: 1;
+    margin: 20px 70px;
+    padding: 50px;
+    border: 1px solid black;
+}
+.form-section {
+    flex: 1;
+    margin: 20px 70px;
+    padding: 50px;
+    border: 1px solid black;
+}

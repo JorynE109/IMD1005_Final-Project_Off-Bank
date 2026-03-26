@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Off-Bank</title>
+    <link rel="stylesheet" href="https://use.typekit.net/kxt1gte.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kxt1gte.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kxt1gte.css">
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/about.css">
@@ -34,14 +37,23 @@
             </div>
         </nav>
         <main>
-            <div>
-                 <h1>About Off-Bank</h1>
-                 <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem.</p>
+            <div class="ab-div">
+                <h1>About Off-Bank</h1>
+                <p>Off-Bank is a student-run organization seeking to create a 
+                    hub for events in the Ottawa alternative music scene. 
+                    Our goal is to showcase local artists and offer an easy way 
+                    to stay up-to-date on events and shows in the Ottawa area. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id 
+                    est laborum. 
+                </p>
             </div>
-            <section id="formHolder">
-                <div id="portraitHolder">
-                    <img src="../img/wizard-orb-1.png" alt="wizard contemplating at his orb.">
-                </div>
+            <section class="form-section" id="formHolder">
                 <form name="contactForm">
                     <div class="form-question">
                         <label for="name">Name*</label>
@@ -62,16 +74,16 @@
                         <p>Purpose*</p>
                         <div id="purpose-options-holder">
                             <div class="option">
-                                <input type="radio" id="enchantment-quote" name="purpose" value="enchantment-quote">
-                                <label for="enchantment-quote">Enchantment Quote</label>
+                                <input type="radio" id="band-submission" name="purpose" value="band-submission">
+                                <label for="band-submission">Band Submission</label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="hex-quote" name="purpose" value="hex-quote">
-                                <label for="enchantment-quote">Hex Quote</label>
+                                <input type="radio" id="event-submission" name="purpose" value="event-submission">
+                                <label for="event-submission">Event Submission</label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="potion-quote" name="purpose" value="potion-quote">
-                                <label for="potion-quote">Potion Quote</label>
+                                <input type="radio" id="venue-submission" name="purpose" value="venue-submission">
+                                <label for="venue-submission">Venue Submission</label>
                             </div>
                             <div class="option">
                                 <input type="radio" id="feedback" name="purpose" value="feedback">
@@ -86,8 +98,8 @@
                         <p id="purposeErrorMessage" class="hidden error-message">Do not leave blank</p>
                     </div>
                     <div class="form-question">
-                        <label for="details">Details* <span id="stringLength">0/200</span></label>
-                        <textarea id="details" name="details"></textarea>
+                        <label for="message">Message* <span id="stringLength">0/200</span></label>
+                        <textarea id="message" name="message"></textarea>
                         <p id="detailsErrorMessage" class="hidden error-message">Message too long</p>
                     </div>
                     
