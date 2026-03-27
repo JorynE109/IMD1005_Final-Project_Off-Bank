@@ -18,7 +18,7 @@
     border: 2px solid var(--black);
     text-align: center;
     padding: 10px 5px;
-    font-size: 8px;
+    font-size: 18px;
 }
 #calendarDisplay .calDay{
     padding: 5px;
@@ -29,7 +29,11 @@
     border: 2px solid var(--black);
 }
 .calDay p {
-    font-size: 8px;
+    font-size: 14px;
+}
+.calDay .evTitle {
+    font-size: 10px;
+    letter-spacing: -1px;
 }
 
 main {
@@ -76,7 +80,6 @@ h1 {
     color: var(--purple);
 }
 .dayEvent {
-    font-size: 14px;
     color: var(--red);
     line-height: 1;
     padding: 5px 0px 5px 0px;
