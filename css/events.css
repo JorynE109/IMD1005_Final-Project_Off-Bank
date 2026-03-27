@@ -50,6 +50,9 @@ h1 {
     font-size: 72px;
     margin: 70px 10px 20px 10px;
 }
+p {
+    font-family: "chainprinter", sans-serif;
+}
 #eventsCalendar {
     width: 100%;
 }
