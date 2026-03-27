@@ -1,8 +1,9 @@
 #calendarDisplay{
     display: grid;
-    margin: 40px;
     grid-template-columns: repeat(7, 1fr);
-    border: 2px solid var(--black);
+    grid-auto-flow: dense;
+    justify-content: center;
+    width: 100%;
 }
 #calendarDisplay.listview{
     display: flex;
@@ -12,18 +13,36 @@
     display: none;
 }
 #calendarDisplay .calendarDay {
+    gap: 0px;
+    min-width: 0;
     border: 2px solid var(--black);
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 8px;
 }
 #calendarDisplay .calDay{
-    height: clamp(100px, 400px);
+    padding: 5px;
+    min-width: 0;
+    min-height: 50px;
+    text-align: left;
+    cursor: pointer;
     border: 2px solid var(--black);
+}
+.calDay p {
+    font-size: 8px;
 }
 
 main {
-    padding: 3rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+h1 {
+    margin: 70px 10px 20px 10px;
+}
+#eventsCalendar {
+    max-width: 100%;
 }
 #viewSelectionHolder {
     display: flex;
@@ -41,7 +60,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 15px;
     gap: 0.5rem;
 }
 .monthYearDisplay {
@@ -51,8 +70,17 @@ main {
     align-items: center;
     gap: 1rem;
 }
+#yearText {
+    font-family: "cotton", sans-serif;
+    font-size: 28px;
+    color: var(--purple);
+}
 .dayEvent {
-    font-size: 16px;
+    font-size: 14px;
     color: var(--red);
-    line-height: 1.5;
+    line-height: 1;
+    padding: 5px 0px 5px 0px;
+}
+
+@media screen and (min-width: 768px) {
 }
