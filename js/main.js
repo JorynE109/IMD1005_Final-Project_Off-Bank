@@ -34,9 +34,8 @@ function updateNewsDisplay()
     let eventsHTML = [];
     for (let i = 0; i < events.length; i++)
     {
-        console.log((new Date(events[i].date)).getTime());
-        console.log((new Date()).getTime())
-        if ((new Date(events[i].date)).getTime() > (new Date()).getTime() && eventsHTML.length < 3)
+        //console.log(new Date((new Date()).getFullYear(), (new Date()).getMonth(), (new Date()).getDate()))
+        if ((new Date(events[i].date)) >= (new Date((new Date()).getFullYear(), (new Date()).getMonth(), (new Date()).getDate())) && eventsHTML.length < 3)
         {
             eventsHTML.push(`<a class="eventPrev" href="/page/events/date/?date=${events[i].date}&title=${events[i].title}">
                                 <p class="evTitle">${events[i].title}</p>
