@@ -27,6 +27,16 @@
             "path": "/post/testpost/",
             "date": "2026-03-27",
             "content": "This is the content of the entire article."
+        },
+        {
+            "title": "Taxi Girls",
+            "name": "Taxi Girls",
+            "genre": "Punk n Roll",
+            "src": "/img/artist/taxi-girls.webp",
+            "url": "https://linktr.ee/taxigirlsmontreal",
+            "path": "/post/test",
+            "date": "2026-03-27",
+            "highlight": "This is a description of taxi girls!"
         }
     ],
     "album":
