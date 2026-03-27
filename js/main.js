@@ -39,8 +39,8 @@ function updateNewsDisplay()
         if ((new Date(events[i].date)).getTime() > (new Date()).getTime() && eventsHTML.length < 3)
         {
             eventsHTML.push(`<a class="eventPrev" href="/page/events/date/?date=${events[i].date}&title=${events[i].title}">
-                             <h4 class="evTitle">${events[i].title}</h4>
-                             <p class="evDate">${events[i].date}</p>
+                                <p class="evTitle">${events[i].title}</p>
+                                <p class="evDate">${events[i].date}</p>
                              </a>`);
         }
     }

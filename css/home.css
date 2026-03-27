@@ -1,0 +1,11 @@
+#newsDisplay{
+    width: fit-content;
+}
+.eventPrev{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0.5rem 0;
+    width: 100%;
+    justify-content: space-between;
+}

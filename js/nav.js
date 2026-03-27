@@ -26,12 +26,17 @@ if (page == "")
 {
     page = "home";
 }
+if (page == "date")
+{
+    page = "event";
+}
 console.log(page);
 const pageIcons = {
     "home": `<img class="navicon" src="/img/icon/icons8-home.svg">`,
     "posts": `<img class="navicon" src="/img/icon/icons8-article.svg">`,
     "events": `<img class="navicon" src="/img/icon/icons8-calendar-24.png">`,
-    "about": `<img class="navicon" src="/img/icon/icons8-smile-24.png">`
+    "about": `<img class="navicon" src="/img/icon/icons8-smile-24.png">`,
+    "event": `<img class="navicon" src="/img/icon/icons8-smile-24.png">`
 }
 const hamburgerIcon = `<img class="navHamburger" src="/img/icon/icons8-hamburger.svg">`
 

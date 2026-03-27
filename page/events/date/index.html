@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event</title>
+    <link rel="stylesheet" href="https://use.typekit.net/kxt1gte.css">
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/event-post.css">
 </head>
 <body>
+    <header>
+        <a href="/"><img class="logo" src="/img/logo.svg"></a>
+    </header>
     <div id="wrapper">
         <nav></nav>
         <main>
@@ -48,16 +52,20 @@
                 if(ev.title == evTitle && ev.date == evDate)
                 {
                     eventHTML.push(`
-                    <h2>${ev.title}</h2>
                     <div id="eventInfo">
-                        <div class="infoText">
-                            <p class="date">${ev.date}</p>
-                            <p class="venue">${ev.venue}</p>
-                            <p class="price">Cover: ${ev.price}</p>
-                            <a class="link" href="${ev.link}">Get Tickets</a>
+                        <div class="title">
+                            <h1>${ev.title}</h1>
+                            <div class="sub">
+                                <p class="venue">${ev.venue}</p>
+                                <p class="date">${ev.date}</p>
+                            </div>
                         </div>
                         <div class="evPoster">
                             <img src="${ev.poster}">
+                        </div>
+                        <div class="infoText">
+                            <p class="price">Cover: $${ev.price}</p>
+                            <a class="link btn" href="${ev.link}">Get Tickets</a>
                         </div>
                     </div>
                     <div id="eventBody">
@@ -68,11 +76,11 @@
                         ev.artistInfo.forEach(artist=>{
                             eventHTML.push(`
                                 <div class="artistInfo">
-                                    <h3 class="artistName">${artist.name}</h3>
+                                    <h2 class="artistName">${artist.name}</h2>
                                     <img src="${artist.photo}">
                                     <p class="artistGenre">${artist.genre}</p>
                                     <p class="artistDesc">${artist.desc}</p>
-                                    <a href="${artist.url}">See More</a>
+                                    <a href="${artist.url}" class="btn">See More</a>
                                 </div>
                             `)
                         });
