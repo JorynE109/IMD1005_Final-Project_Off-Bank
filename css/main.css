@@ -235,7 +235,7 @@ button, .btn{
         font-size: 1.3rem;
         height: fit-content;
         width: fit-content;
-        position: absolute;
+        position: fixed;
     }
     #mobileHeader{
         display: none;
