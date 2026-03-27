@@ -371,3 +371,8 @@ function watchCalDayClicks(){
         })
     })
 }
+
+const button = document.getElementById('viewSelect');
+button.addEventListener('click', function() {
+  this.classList.add('viewSelectClicked');
+});

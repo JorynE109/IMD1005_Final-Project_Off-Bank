@@ -15,6 +15,7 @@
 #calendarDisplay .calendarDay {
     gap: 0px;
     min-width: 0;
+    background-color: var(--red);
     border: 2px solid var(--black);
     text-align: center;
     padding: 10px 5px;
@@ -117,7 +118,7 @@ h1 {
     font-size: 16px;
 }
 #eventInfo .link {
-    font-family: "aw-conqueror-sans", sans-serif;
+    font-family: "elza-narrow", sans-serif;
     line-height: 2;
 }
 #eventBody img {
@@ -140,13 +141,48 @@ h1 {
     font-size: 16px;
 }
 .artistInfo a {
-    font-family: "aw-conqueror-sans", sans-serif;
+    font-family: "elza-narrow", sans-serif;
     font-size: 16px;
 }
 
+.viewSelect {
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+    font-family: "elza-narrow", sans-serif;
+    color: var(--black);
+    background-color: var(--white);
+    font-size: 1.3rem;
+    width: fit-content;
+    margin: auto;
+    border: 2px solid var(--black);
+    border-radius: 5px;
+}
+.viewSelect:focus {
+    background-color: var(--blue);
+    border: 3px solid var(--black);
+    font-weight: bold;
+}
+.monthSelect {
+    padding: 0px;
+    text-decoration: none;
+    font-family: "elza-narrow", sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: var(--black);
+    background-color: var(--white);
+    font-size: 1.3rem;
+    width: fit-content;
+    margin: 10px;
+}
+.monthSelect:hover {
+    transform: scale(1.5);
+}
+
+
 @media screen and (min-width: 768px) {
     h1 {
-        font-size: 72px;
+        font-size: 80px;
+        letter-spacing: 2px;
         margin: 40px 10px 20px 10px;
     }
     #eventsCalHead {
@@ -166,7 +202,7 @@ h1 {
         font-size: 20px;
     }
     #calendarDisplay .calDay{
-        padding: 5px;
+        padding: 10px;
         min-width: 0;
         min-height: 100px;
         text-align: left;
@@ -177,9 +213,20 @@ h1 {
         font-size: 18px;
     }
     .listview .calDay .evTitle {
-        font-size: 20px;
+        font-size: 24px;
     }
-    
+    .listview h3 {
+        margin: 30px 40px;
+    }
+    .listview .dayEvent h3 {
+        margin: 40px 0px 20px 0px;
+    }
+    .listview .dayEvent{
+        margin: 20px 40px;
+    }
+    .listview .calDay .dayEvent {
+        font-size: 50px;
+    }
     .calDay .evTitle {
         font-size: 20px;
     }
