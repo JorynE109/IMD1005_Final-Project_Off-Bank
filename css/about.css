@@ -24,7 +24,6 @@ main {
     background-color: var(--white);
 }
 p {
-    font-family: "chainprinter", sans-serif;
     font-size: 18px;
     text-align: justify;
 }

@@ -1,6 +1,8 @@
 #calendarDisplay{
     display: grid;
+    margin: 40px;
     grid-template-columns: repeat(7, 1fr);
+    border: 2px solid var(--black);
 }
 #calendarDisplay.listview{
     display: flex;
@@ -9,6 +11,48 @@
 .hidden{
     display: none;
 }
+#calendarDisplay .calendarDay {
+    border: 2px solid var(--black);
+}
 #calendarDisplay .calDay{
     height: clamp(100px, 400px);
+    border: 2px solid var(--black);
+}
+
+main {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#viewSelectionHolder {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 0.5rem;
+    text-align: center;
+}
+.selectButtonDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.calMonthSelectDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 0.5rem;
+}
+.monthYearDisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+.dayEvent {
+    font-size: 16px;
+    color: var(--red);
+    line-height: 1.5;
 }
