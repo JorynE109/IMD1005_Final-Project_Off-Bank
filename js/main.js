@@ -1,5 +1,6 @@
 const $newsDisplay = document.getElementById('newsDisplay');
 const $recentPostsDisplay = document.getElementById('recentPostsDisplay');
+const $artistHighlight = document.getElementById('artistHighlightDisplay');
 let events;
 let posts;
 
@@ -42,6 +43,7 @@ async function loadPosts(){
     console.log(posts);
 
     updatePostsDisplay();
+    updateArtistHighlight();
 }
 function updatePostsDisplay()
 {
@@ -80,4 +82,20 @@ function updatePostsDisplay()
             `);
     }
     $recentPostsDisplay.innerHTML = postsDispHTML.join("");
+}
+function updateArtistHighlight()
+{
+    let allArtists = [];
+
+    posts['artist'].forEach(artist => {
+        allArtists.push(artist);
+    });
+    
+    const dailyArtist = (new Date().getDate() % allArtists.length);
+
+    $artistHighlight.innerHTML = `
+    <div class="highlightedArtist">
+        <p class="artistTitle">${posts['artist'][dailyArtist].title}</p>
+    </div>
+    `
 }

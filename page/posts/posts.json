@@ -9,6 +9,24 @@
             "path": "/post/testpost/",
             "date": "2026-03-27",
             "content": "This is the content of the entire article."
+        },
+        {
+            "src": "/img/artist/def.png",
+            "title": "Test Artist 2",
+            "category": "artist",
+            "highlight": "This is the highlight sentence",
+            "path": "/post/testpost/",
+            "date": "2026-03-27",
+            "content": "This is the content of the entire article."
+        },
+        {
+            "src": "/img/artist/def.png",
+            "title": "Test Artist 3",
+            "category": "artist",
+            "highlight": "This is the highlight sentence",
+            "path": "/post/testpost/",
+            "date": "2026-03-27",
+            "content": "This is the content of the entire article."
         }
     ],
     "album":
