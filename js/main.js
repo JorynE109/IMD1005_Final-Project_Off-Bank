@@ -96,10 +96,12 @@ function updateArtistHighlight()
     $artistHighlight.innerHTML = `
     <div class="highlightedArtist">
         <img class="artistImg" src="${posts['artist'][dailyArtist].src}">
-        <p class="artistTitle">${posts['artist'][dailyArtist].title}</p>
-        <p class="artistGenre">${posts['artist'][dailyArtist].genre}</p>
-        <p class="artistDesc">${posts['artist'][dailyArtist].highlight}</p>
-        <a class="artistLink btn" href="${posts['artist'][dailyArtist].path}">Read More</a>
+        <div class="artistInfoText">
+            <p class="artistTitle">${posts['artist'][dailyArtist].title}</p>
+            <p class="artistGenre">${posts['artist'][dailyArtist].genre}</p>
+            <p class="artistDesc">${posts['artist'][dailyArtist].highlight}</p>
+            <a class="artistLink btn" href="${posts['artist'][dailyArtist].path}">Read More</a>
+        </div>
     </div>
     `
 }

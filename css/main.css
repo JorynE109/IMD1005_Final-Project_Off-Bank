@@ -153,7 +153,71 @@ button, .btn{
     margin: auto;
     border: none;
 }
+<<<<<<< HEAD
 
+=======
+.sidebar{
+    background-color: var(--red);
+    padding: 2rem;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 1rem;
+}
+.sidebar h2{
+    color: var(--white);
+}
+.sidebar #recentPostsDisplay .post{
+    width: 100%;
+}
+.sidebar #recentPostsDisplay a{
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+.sidebar #newsDisplay a{
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+.sidebar #recentPostsDisplay a:hover, .sidebar #newsDisplay a:hover{
+    background-color: var(--purple);
+}
+.sidebar .highlightedArtist{
+    background-color: var(--white);
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 2rem;
+}
+.sidebar .highlightedArtist img{
+    max-width: 120px;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 60px;
+}
+.sidebar .highlightedArtist .artistInfoText{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.sidebar .highlightedArtist .artistInfoText .artistTitle{
+    font-size: 1.3rem;
+}
+.sidebar .highlightedArtist .artistInfoText .btn{
+    align-self: flex-end;
+    margin-top: 1rem;
+}
+>>>>>>> 806d006dd8738bd014e68df4ba8d2e9ff87e2134
 @media screen and (min-width:768px){
     body{
         font-size: 20px;

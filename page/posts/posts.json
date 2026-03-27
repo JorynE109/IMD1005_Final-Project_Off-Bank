@@ -2,40 +2,14 @@
     "artist":
     [
         {
-            "src": "/img/artist/def.png",
-            "title": "Test Artist",
-            "category": "artist",
-            "highlight": "This is the highlight sentence",
-            "path": "/post/testpost/",
-            "date": "2026-03-27",
-            "content": "This is the content of the entire article."
-        },
-        {
-            "src": "/img/artist/def.png",
-            "title": "Test Artist 2",
-            "category": "artist",
-            "highlight": "This is the highlight sentence",
-            "path": "/post/testpost/",
-            "date": "2026-03-27",
-            "content": "This is the content of the entire article."
-        },
-        {
-            "src": "/img/artist/def.png",
-            "title": "Test Artist 3",
-            "category": "artist",
-            "highlight": "This is the highlight sentence",
-            "path": "/post/testpost/",
-            "date": "2026-03-27",
-            "content": "This is the content of the entire article."
-        },
-        {
             "title": "Taxi Girls",
             "name": "Taxi Girls",
             "genre": "Punk n Roll",
             "src": "/img/artist/taxi-girls.webp",
             "url": "https://linktr.ee/taxigirlsmontreal",
-            "path": "/post/test",
+            "path": "/post/taxi-girls/",
             "date": "2026-03-27",
+            "category": "artist",
             "highlight": "This is a description of taxi girls!"
         }
     ],
@@ -49,25 +23,16 @@
             "path": "/post/testpost/",
             "date": "2026-01-26",
             "content": "This is the content of the entire article."
-        },
-        {
-            "src": "/img/album/def.png",
-            "title": "Second Album",
-            "category": "album",
-            "highlight": "This is the highlight sentence",
-            "path": "/post/testpost/",
-            "date": "2026-05-26",
-            "content": "This is the content of the entire article."
         }
     ],
     "venue":
     [
         {
-            "src": "/img/venue/def.png",
-            "title": "Test Venue",
+            "src": "/img/venue/targ.png",
+            "title": "House of Targ",
             "category": "venue",
-            "highlight": "This is the highlight sentence",
-            "path": "/post/testpost/",
+            "highlight": "Basement venue with a consistent line up of local alt music.",
+            "path": "/post/house-of-targ/",
             "date": "2026-06-25",
             "content": "This is the content of the entire article."
         }

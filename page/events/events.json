@@ -43,7 +43,8 @@
                 "genre": "Punk n Roll",
                 "photo": "/img/artist/taxi-girls.webp",
                 "url": "https://linktr.ee/taxigirlsmontreal",
-                "desc": ""
+                "desc": "",
+                "path": "/post/taxi-girls/"
             },
             {
                 "name": "Subtrash Music",
