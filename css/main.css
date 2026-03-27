@@ -285,5 +285,6 @@ button, .btn{
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        padding: 2rem;
     }
 }

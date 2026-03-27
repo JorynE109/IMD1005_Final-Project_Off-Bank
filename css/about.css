@@ -3,8 +3,8 @@ body {
 }
 
 main {
-    padding: 70px 10px;
-    gap: 1rem;
+    padding: 5rem 1rem 1rem 1rem;
+    gap: 2rem;
     display: flex;
     flex-direction: column;
     background-color: var(--purple);
@@ -28,15 +28,14 @@ main {
 }
 p {
     font-family: "chainprinter", sans-serif;
-    font-size: 18px;
     text-align: justify;
 }
 
 .form-section {
     flex: 1;
     height: fit-content;
-    border: 15px double var(--purple);
-    border-radius: 20px;
+    border: 1rem double var(--purple);
+    border-radius: 2rem;
     background-color: var(--blue);
 }
 h2 {
@@ -105,21 +104,24 @@ input:active, input:focus {
 }
 
 @media screen and (min-width: 768px) {
+    main{
+        padding: 2rem;
+    }
+}
+@media screen and (min-width: 900px) {
     #formHolder {
         grid-template-columns: 1fr;
     }
     main{
         flex-direction: row;
-        padding: 5px;
-        gap: 0.5rem;
+        gap: 2rem;
+        padding: 2rem;
     }
     .ab-div {
         flex: 2;
-        margin: 20px 40px;
     }
     .form-section {
         flex: 1;
         width: 100%;
-        margin: 10px 20px;
     }
 }
