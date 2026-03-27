@@ -21,6 +21,7 @@ async function loadEvents(){
 }
 function updateNewsDisplay()
 {
+    console.log("updating newsDisplay")
     let eventsHTML = [];
     for (let i = 0; i < events.length; i++)
     {

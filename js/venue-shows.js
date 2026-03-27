@@ -5,9 +5,9 @@ let $events = [];
 
 window.addEventListener('load', (event) => {
     if($upcomingShowsDisp)
-        loadEvents();
+        loadUpcomingEvents();
 });
-async function loadEvents(){
+async function loadUpcomingEvents(){
     const res = await fetch('/page/events/events.json');
     const data = await res.json();
     

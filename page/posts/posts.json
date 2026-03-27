@@ -7,7 +7,7 @@
             "genre": "Punk n Roll",
             "src": "/img/artist/taxi-girls.webp",
             "url": "https://linktr.ee/taxigirlsmontreal",
-            "path": "/post/taxi-girls/",
+            "path": "/post/artist/taxi-girls/",
             "date": "2026-03-27",
             "category": "artist",
             "highlight": "This is a description of taxi girls!"
@@ -16,12 +16,13 @@
     "album":
     [
         {
-            "src": "/img/album/def.png",
-            "title": "Test Album",
+            "src": "/img/album/this-is-our-free-bird.png",
+            "title": "This is our Free Bird",
             "category": "album",
+            "type": "ep",
             "highlight": "This is the highlight sentence",
-            "path": "/post/testpost/",
-            "date": "2026-01-26",
+            "path": "/post/album/this-is-our-free-bird/",
+            "date": "2026-03-26",
             "content": "This is the content of the entire article."
         }
     ],
@@ -33,7 +34,7 @@
             "category": "venue",
             "highlight": "Basement venue with a consistent line up of local alt music.",
             "path": "/post/house-of-targ/",
-            "date": "2026-06-25",
+            "date": "2026-03-25",
             "content": "This is the content of the entire article."
         }
     ],
@@ -45,7 +46,7 @@
             "category": "article",
             "highlight": "This is the highlight sentence",
             "path": "/post/testpost/",
-            "date": "2026-03-29",
+            "date": "2026-03-18",
             "content": "This is the content of the entire article."
         }
     ]

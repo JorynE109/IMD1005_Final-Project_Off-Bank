@@ -44,7 +44,7 @@
                 "photo": "/img/artist/taxi-girls.webp",
                 "url": "https://linktr.ee/taxigirlsmontreal",
                 "desc": "",
-                "path": "/post/taxi-girls/"
+                "path": "/post/artist/taxi-girls/"
             },
             {
                 "name": "Subtrash Music",
@@ -65,7 +65,8 @@
                 "genre": "Punk",
                 "photo": "/img/artist/passenger-princess.webp",
                 "url": "https://passengerprincess.bandcamp.com/album/this-is-our-free-bird?from=embed",
-                "desc": ""
+                "desc": "",
+                "path": "/post/artist/passenger-princess/"
             }
         ]
     },
