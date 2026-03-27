@@ -1,7 +1,6 @@
 main{
     flex-direction: column;
-    padding: 2rem;
-    gap: 6rem;
+    gap: 2rem;
 }
 .articleContent{
     border: 8px double var(--blue);
@@ -23,8 +22,52 @@ h1{
     max-height: 50vh;
     padding: 2rem;
 }
+.infoText{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.unreviewed{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--red);
+    color: var(--white);
+}
+a.show{
+    color: var(--red);
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+a.show:hover{
+    color: var(--white);
+    background-color: var(--red);
+}
 @media screen and (min-width: 900px){
     main{
         flex-direction: row;
+    }
+}
+@media screen and (min-width: 1300px){
+    .articleContent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto, 4);
+        column-gap: 1rem;
+        max-width: 950px;
+    }
+    .articleContent h1{
+        grid-column: span 2;
+    }
+    .articleContent .imgDisp{
+        grid-row: span 3;
+        padding: 0;
+        align-items: flex-start;
+    }
+    .articleContent .imgDisp img{
+        padding: 0;
     }
 }

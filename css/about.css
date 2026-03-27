@@ -3,7 +3,6 @@ body {
 }
 
 main {
-    padding: 5rem 1rem 1rem 1rem;
     gap: 2rem;
     display: flex;
     flex-direction: column;
