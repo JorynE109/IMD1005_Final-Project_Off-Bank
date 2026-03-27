@@ -1,9 +1,10 @@
 body {
-    gap: 0.5rem;
     background-color: var(--purple);
 }
 
 main {
+    padding: 70px 10px;
+    gap: 1rem;
     display: flex;
     flex-direction: column;
     background-color: var(--purple);
@@ -16,7 +17,6 @@ main {
     align-items: center;
     gap: 20px;
     height: fit-content;
-    margin: 25px 5px;
     padding: 2rem;
     border: 1px solid var(--white);
     border-radius: 20px;
@@ -30,7 +30,6 @@ p {
 
 .form-section {
     flex: 1;
-    margin: 25px 5px;
     height: fit-content;
     border: 15px double var(--purple);
     border-radius: 20px;
@@ -95,11 +94,16 @@ input:active, input:focus {
     }
     main{
         flex-direction: row;
+        padding: 5px;
+        gap: 0.5rem;
     }
     .ab-div {
+        flex: 2;
         margin: 20px 40px;
     }
     .form-section {
-        margin: 25px 40px;
+        flex: 1;
+        width: 100%;
+        margin: 25px 20px;
     }
 }
