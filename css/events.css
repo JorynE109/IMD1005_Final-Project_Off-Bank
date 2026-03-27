@@ -51,3 +51,8 @@ main {
     align-items: center;
     gap: 1rem;
 }
+.dayEvent {
+    font-size: 16px;
+    color: var(--red);
+    line-height: 1.5;
+}
