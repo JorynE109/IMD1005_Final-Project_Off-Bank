@@ -20,17 +20,6 @@ async function loadEvents(){
 }
 function updateNewsDisplay()
 {
-    // eventsHTML = []
-    // for (let i = 0; i < 3; i++)
-    // {
-    //     eventsHTML.push(`<a class="eventPrev" href="/page/events/date/?date=${events[i].date}&title=${events[i].title}">
-    //                         <h4 class="evTitle">${events[i].title}</h4>
-    //                         <p class="evDate">${events[i].date}</p>
-    //                     </a>`);
-
-    // }
-    // $newsDisplay.innerHTML = eventsHTML.join("");
-
     let eventsHTML = [];
     for (let i = 0; i < events.length; i++)
     {
@@ -56,5 +45,39 @@ async function loadPosts(){
 }
 function updatePostsDisplay()
 {
+    let allpostTypes = ['artist', 'album', 'venue', 'article'];
+    let allPosts = [];
+    let postsDispHTML = [];
 
+    allpostTypes.forEach(category => {
+        for (let i = 0; i < posts[category].length; i++)
+        {
+            allPosts.push(posts[category][i]);
+        }
+    });
+    console.log(allPosts);
+    
+    const sorted = allPosts.sort((a, b) => (new Date(a.date)) - (new Date(b.date))).reverse();
+    
+    console.log(sorted);
+    
+    // const sorted = [];
+
+    // for(let i = 0; i < (allPosts.length); i++)
+    // {
+    //     sorted[i] = allPosts[(allPosts.length - 1) - i];
+    // }
+
+    for (let i = 0; i < 3; i++)
+    {
+        postsDispHTML.push(`
+            <div class="post">
+                <a href="${sorted[i].path}">
+                    <p class="postTitle">${sorted[i].title}</p>
+                    <p class="postDate">${sorted[i].date}</p>
+                </a>
+            </div>
+            `);
+    }
+    $recentPostsDisplay.innerHTML = postsDispHTML.join("");
 }
