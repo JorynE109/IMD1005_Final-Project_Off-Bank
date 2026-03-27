@@ -1,0 +1,30 @@
+main{
+    flex-direction: column;
+    padding: 2rem;
+    gap: 6rem;
+}
+.articleContent{
+    border: 8px double var(--blue);
+    padding: 1rem;
+    border-radius: 3rem;
+}
+h1{
+    text-align: center;
+}
+.articleContent .imgDisp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgDisp img{
+    width: 100%;
+    object-fit: contain;
+    max-height: 50vh;
+    padding: 2rem;
+}
+@media screen and (min-width: 900px){
+    main{
+        flex-direction: row;
+    }
+}

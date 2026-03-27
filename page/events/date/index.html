@@ -81,9 +81,18 @@
                                     <img src="${artist.photo}">
                                     <p class="artistGenre">${artist.genre}</p>
                                     <p class="artistDesc">${artist.desc}</p>
-                                    <a href="${artist.url}" class="btn">See More</a>
-                                </div>
+                                    
                             `)
+                            if (artist.path)
+                            {
+                                eventHTML.push(`<a href="${artist.path}" class="btn">Read More</a>
+                                </div>`)
+                            }
+                            else
+                            {
+                                eventHTML.push(`<a href="${artist.url}" class="btn">See More</a>
+                                </div>`)
+                            }
                         });
                     }
                     eventHTML.push(`</div>`);
