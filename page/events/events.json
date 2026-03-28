@@ -84,8 +84,112 @@
     },
     {
         "date": "03-28-2026",
-        "title": "Ottawa Trans Library Benefit",
+        "title": "Ottawa Trans Library Benefit Concert",
         "venue": "LIVE! on Elgin",
-        "price": 20
+        "price": 20,
+        "poster": "/img/event/2026-03-28_Trans-Library-Benefit.jpg",
+        "link": "https://www.revelree.ca/event/chiron-otl-0326",
+        "artistInfo":[
+            {
+                "name": "HotSkins",
+                "genre": "Alt Rock",
+                "photo": "/img/artist/HotSkins.jpg",
+                "url": "https://www.instagram.com/hotskinsofficial/",
+                "desc": "HotSkins have been crafting a diverse collection of songs since 2018, driven by their love for making music and performing live. Their collaborative approach blends various genres, aiming to create music that resonated and inspires. HotSkins are focused on refining their unique sound and having a blast while doing it, all while hoping to leave a meaningful impact on their listeners.",
+                "path": "/post/?title=HotSkins&type=artist"
+            },
+            {
+                "name": "It Shines",
+                "genre": "Folk Punk",
+                "photo": "/img/artist/it-shines.png",
+                "url": "https://www.instagram.com/itshines_sucks/",
+                "desc": "It Shines is a folk punk band from Ottawa, Ontario, Canada. Forming in early 2025, It Shines focuses on writing sensitive songs about their feelings, relationships, and experiences. Sound-wise, they mix the energy and thoughtfulness of fourth-wave emo with the sound of indie folk. It Shines has been compared to artists like Bright Eyes, The Cure, and Big Thief. They have been playing shows since late 2025 and are currently in the process of recording and releasing music.",
+                "path": "/post/?title=It Shines&type=artist"
+            },
+            {
+                "name": "Candy Says",
+                "genre": "Punk",
+                "photo": "/img/artist/candy-says.jpg",
+                "url": "https://www.instagram.com/candysaysband/",
+                "desc": "We are Candy Says! We are a 3 piece queer punk band from Ottawa, ON. Our influences include Wire, the Damned, Bikini kill and the Cramps. We have been a band for a little over a year and have been playing shows since august!",
+                "path": "/post/?title=Candy Says&type=artist"
+            }
+        ]
+    },
+    {
+        "date": "04-03-2026",
+        "title": "Kibble, August John and Phasez @ Avante Garde",
+        "venue": "Avante Garde Bar",
+        "price": 15,
+        "url": "https://www.instagram.com/p/DWVCQCQjUiL/",
+        "poster": "/img/event/2026-04-03_KAP.jpg",
+        "artistInfo": [
+            {
+                "name": "Kibble",
+                "genre": "Alt Rock",
+                "url": "https://www.instagram.com/kibbleisaband/",
+                "photo": "/img/artist/kibble.jpg",
+                "desc": "",
+                "path": "/post/?title=Kibble&type=artist"
+            },
+            {
+                "name": "August John",
+                "genre": "Rock",
+                "url": "https://www.instagram.com/augustjohn_/",
+                "photo": "/img/artist/august-john.webp",
+                "desc": "",
+                "path": "/post/?title=August John&type=artist"
+            },
+            {
+                "name": "Phasez and the Faes",
+                "genre": "Etherial Goth",
+                "url": "https://www.instagram.com/thefaesmusic/",
+                "photo": "/img/artist/phasez.png",
+                "desc": "",
+                "path": "/post/?title=Phasez and the Faes&type=artist"
+            }
+        ]
+    },
+    {
+        "date": "04-10-2026",
+        "title": "Monach, Neon Ghost House, Passenger Princess and Futura Free @ Targ",
+        "venue": "House of Targ",
+        "price": 10,
+        "url": "https://www.eventbrite.com/e/neon-ghosthouse-monach-passenger-princess-futura-free-tickets-1983448949200",
+        "poster": "/img/event/2026-04-10_MNPF.webp",
+        "artistInfo": [
+            {
+                "name": "Monach",
+                "genre": "Pop Punk",
+                "url": "https://linktr.ee/monachband",
+                "photo": "/img/artist/monach.jpg",
+                "desc": "",
+                "path": "/post/?title=Monach&type=artist"
+            },
+            {
+                "name": "Neon Ghost House",
+                "genre": "Alt/Emo/Indie",
+                "url": "https://linktr.ee/neon.ghosthouse",
+                "photo": "/img/artist/neon-ghost-house.webp",
+                "desc": "",
+                "path": "/post/?title=Neon Ghost House&type=artist"
+            },
+            {
+                "name": "Passenger Princess",
+                "genre": "Punk",
+                "photo": "/img/artist/passenger-princess.webp",
+                "url": "https://passengerprincess.bandcamp.com/album/this-is-our-free-bird?from=embed",
+                "desc": "",
+                "path": "/post/?title=Passenger Princess&type=artist"
+            },
+            {
+                "name": "Futura Free",
+                "genre": "Shoegaze/Dreampop",
+                "photo": "/img/artist/futura-free.jpg",
+                "url": "https://linktr.ee/futurafree",
+                "desc": "",
+                "path": "/post/?title=Futura Free&type=artist"
+            }
+        ]
     }
 ]

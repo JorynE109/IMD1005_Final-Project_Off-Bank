@@ -34,6 +34,42 @@
             "date": "2026-03-27",
             "category": "artist",
             "highlight": "This is a description of PP!"
+        },
+        {
+            "title": "HotSkins",
+            "genre": "Alt Rock",
+            "locale": "Ottawa",
+            "category": "artist",
+            "date": "2026-03-28",
+            "src": "/img/artist/HotSkins.jpg",
+            "url": "https://www.instagram.com/hotskinsofficial/",
+            "desc": "HotSkins have been crafting a diverse collection of songs since 2018, driven by their love for making music and performing live. Their collaborative approach blends various genres, aiming to create music that resonated and inspires. HotSkins are focused on refining their unique sound and having a blast while doing it, all while hoping to leave a meaningful impact on their listeners.",
+            "highlight": "HotSkins have been crafting a diverse collection of songs since 2018, driven by their love for making music and performing live.",
+            "path": "/post/?title=HotSkins&type=artist"
+        },
+        {
+            "title": "It Shines",
+            "genre": "Folk Punk",
+            "locale": "Ottawa",
+            "category": "artist",
+            "date": "2026-03-28",
+            "src": "/img/artist/it-shines.png",
+            "url": "https://www.instagram.com/itshines_sucks/",
+            "highlight": "It Shines is a folk punk band from Ottawa, Ontario, Canada. Formed in early 2025, It Shines focuses on writing sensitive songs about their feelings, relationships, and experiences.",
+            "desc": "It Shines is a folk punk band from Ottawa, Ontario, Canada. Forming in early 2025, It Shines focuses on writing sensitive songs about their feelings, relationships, and experiences. Sound-wise, they mix the energy and thoughtfulness of fourth-wave emo with the sound of indie folk. It Shines has been compared to artists like Bright Eyes, The Cure, and Big Thief. They have been playing shows since late 2025 and are currently in the process of recording and releasing music.",
+            "path": "/post/?title=It Shines&type=artist"
+        },
+        {
+            "title": "Candy Says",
+            "genre": "Punk",
+            "locale": "Ottawa",
+            "category": "artist",
+            "date": "2026-03-28",
+            "src": "/img/artist/candy-says.jpg",
+            "url": "https://www.instagram.com/candysaysband/",
+            "highlight": "We are Candy Says! We are a 3 piece queer punk band from Ottawa, ON. Our influences include Wire, the Damned, Bikini kill and the Cramps. We have been a band for a little over a year and have been playing shows since august!",
+            "desc": "We are Candy Says! We are a 3 piece queer punk band from Ottawa, ON. Our influences include Wire, the Damned, Bikini kill and the Cramps. We have been a band for a little over a year and have been playing shows since august!",
+            "path": "/post/?title=Candy Says&type=artist"
         }
     ],
     "album":
