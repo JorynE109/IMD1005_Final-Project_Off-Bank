@@ -15,3 +15,15 @@ main img{
 main{
     flex-direction: column;
 }
+#recentPostsDisplay{
+    width: fit-content;
+}
+#recentPostsDisplay .post a{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    gap: 2rem;
+}
+#artistHighlight{
+    max-width: 500px;
+}
