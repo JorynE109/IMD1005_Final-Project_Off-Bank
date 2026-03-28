@@ -26,9 +26,21 @@
     },
     {
         "date": "03-27-2026",
-        "title": "Sun Dried Flies",
+        "title": "Sun Dried Flies @ Live! On Elgin",
         "venue": "LIVE! on Elgin",
-        "price": 20
+        "price": 20,
+        "poster": "/img/event/2026-03-37_Sun-Dried-Flies.webp",
+        "link": "https://www.revelree.ca/event/sundriedflies-0326/",
+        "artistInfo": [
+            {
+                "name": "Sun Dried Flies",
+                "genre": "Alt Rock",
+                "photo": "/img/artist/sun-dried-flies.webp",
+                "url": "https://sundriedflies.ca/home",
+                "desc": "Formed in 2021 in Prescott, Ontario, Sun Dried Flies channel the spirit of ’90s alternative rock while fearlessly diving into every genre under the sun—classic rock, grunge, blues, country, funk, pop, and more. They play everything you want… and more.",
+                "path": "/post/?title=Sun Dried Flies&type=artist"
+            }
+        ]
     },
     {
         "date": "03-27-2026",
@@ -44,7 +56,7 @@
                 "photo": "/img/artist/taxi-girls.webp",
                 "url": "https://linktr.ee/taxigirlsmontreal",
                 "desc": "",
-                "path": "/post/artist/taxi-girls/"
+                "path": "/post/?title=Taxi Girls&type=artist"
             },
             {
                 "name": "Subtrash Music",
@@ -66,7 +78,7 @@
                 "photo": "/img/artist/passenger-princess.webp",
                 "url": "https://passengerprincess.bandcamp.com/album/this-is-our-free-bird?from=embed",
                 "desc": "",
-                "path": "/post/artist/passenger-princess/"
+                "path": "/post/?title=Passenger Princess&type=artist"
             }
         ]
     },

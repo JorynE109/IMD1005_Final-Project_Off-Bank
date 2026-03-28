@@ -5,12 +5,35 @@
             "title": "Taxi Girls",
             "name": "Taxi Girls",
             "genre": "Punk n Roll",
+            "locale": "Ottawa",
             "src": "/img/artist/taxi-girls.webp",
             "url": "https://linktr.ee/taxigirlsmontreal",
-            "path": "/post/artist/taxi-girls/",
+            "path": "/post/?title=Taxi Girls&type=artist",
             "date": "2026-03-27",
             "category": "artist",
             "highlight": "This is a description of taxi girls!"
+        },
+        {
+            "title": "Sun Dried Flies",
+            "genre": "Alternative Rock",
+            "locale": "Prescott/Ottawa",
+            "src": "/img/artist/sun-dried-flies.webp",
+            "url": "https://sundriedflies.ca/home",
+            "path": "/post/?title=Sun Dried Flies&type=artist",
+            "date": "2026-03-27",
+            "category": "artist",
+            "highlight": "This is a description of Sun Dried Flies!"
+        },
+        {
+            "title": "Passenger Princess",
+            "genre": "Punk",
+            "locale": "Ottawa",
+            "src": "/img/artist/passenger-princess.webp",
+            "url": "",
+            "path": "/post/?title=Passenger Princess&type=artist",
+            "date": "2026-03-27",
+            "category": "artist",
+            "highlight": "This is a description of PP!"
         }
     ],
     "album":
@@ -20,8 +43,9 @@
             "title": "This is our Free Bird",
             "category": "album",
             "type": "ep",
+            "artist": "<a href='/post/?title=Passenger Princess&type=artist'>Passenger Princess</a>",
             "highlight": "This is the highlight sentence",
-            "path": "/post/album/this-is-our-free-bird/",
+            "path": "/post/?title=This is our Free Bird&type=album",
             "date": "2026-03-26",
             "content": "This is the content of the entire article."
         }
@@ -32,8 +56,10 @@
             "src": "/img/venue/targ.png",
             "title": "House of Targ",
             "category": "venue",
+            "genre": "Alt, Metal, Punk, Rock",
+            "locale": "1077 Bank Street, Ottawa",
             "highlight": "Basement venue with a consistent line up of local alt music.",
-            "path": "/post/house-of-targ/",
+            "path": "/post/?title=House of Targ&type=venue",
             "date": "2026-03-25",
             "content": "This is the content of the entire article."
         }

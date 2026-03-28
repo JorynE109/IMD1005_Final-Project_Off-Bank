@@ -29,6 +29,7 @@ function updateShowsDisplay(){
             });
         }
     });
+    
     console.log(dataFiltered);
     console.log(upcomingShowsHTML);
     upcomingShowsHTML.push(`
