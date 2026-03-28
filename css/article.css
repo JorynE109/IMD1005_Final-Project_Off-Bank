@@ -3,9 +3,8 @@ main{
     gap: 2rem;
 }
 .articleContent{
-    border: 8px double var(--blue);
+    border: 8px double var(--black);
     padding: 1rem;
-    border-radius: 3rem;
 }
 h1{
     text-align: center;
