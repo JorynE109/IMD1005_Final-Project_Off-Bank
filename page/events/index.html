@@ -43,8 +43,8 @@
             <div id="viewSelectionHolder">
                 <p>Select View</p>
                 <div class="selectButtonDiv">
-                    <button class="viewSelect" onclick="populateCalDiv(1)">List</button>
-                    <button class="viewSelect" onclick="populateCalDiv(0)">Calendar</button>
+                    <button id="viewSelect" class="viewSelect" onclick="populateCalDiv(1)">List</button>
+                    <button id="viewSelect" class="viewSelect" onclick="populateCalDiv(0)">Calendar</button>
                 </div>
             </div>
             <div id="eventsCalendar">
@@ -55,15 +55,16 @@
                             <p id="yearText">Year</p>
                         </div>
                         <div id="monthSelectButtonsHolder">
-                            <button class="monthSelect" onclick="changeMonth(-1)"><</button>
-                            <button class="monthSelect" onclick="changeMonth(0)">Current</button>
-                            <button class="monthSelect" onclick="changeMonth(1)">></button>
+                            <button id="monthSelect" class="monthSelect arrow" onclick="changeMonth(-1)"><</button>
+                            <button id="monthSelect" class="monthSelect" onclick="changeMonth(0)">Current</button>
+                            <button id="monthSelect" class="monthSelect arrow" onclick="changeMonth(1)">></button>
                         </div>
                     </div>
                     <div id="calendarDisplay"></div>
                     <div id="eventsList"></div>
                 </div>
             </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
         </main>
     </div>
     <script src="/js/main.js"></script>
