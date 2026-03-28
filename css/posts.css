@@ -1,0 +1,46 @@
+main{
+    flex-direction: column;
+}
+#searchBarHolder form{
+    display: flex;
+    justify-content: space-between;
+}
+#searchBarHolder form button{
+    margin: 0;
+}
+#searchBarHolder input{
+    flex-grow: 1;
+}
+.categorySelectionHolder{
+    display: flex;
+}
+.categorySelectionHolder button{
+    margin: 0;
+    flex-grow: 1;
+}
+.categorySelectionHolder button:hover{
+    background-color: var(--purple);
+}
+.categorySelectionHolder button.active{
+    box-shadow: inset 0px 0px 18px 8px rgba(0, 0, 0, 0.25);
+}
+#postsHolder img{
+    max-width: 100%;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.post .btn{
+    margin: 0 auto;
+    margin-top: auto;
+}
+@media screen and (min-width: 900px)
+{
+    #postsHolder{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}

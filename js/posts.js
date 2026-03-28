@@ -39,9 +39,11 @@ function updatePosts(){
     data[postType].forEach(article => {
         postsHolderHTML.push(`<div class="post">
                                 <img src="${article.src}">
-                                <p class="img-label">${article.title}</p>
-                                <a href="#" class="category">${postType}</a>
-                                <p class="highlight">${article.highlight}</p>
+                                <div class="infoText">
+                                    <p class="img-label">${article.title}</p>
+                                    <a href="#" class="category">${article.category}</a>
+                                    <p class="highlight">${article.highlight}</p>
+                                </div>
                                 <a class="btn read-more" href="${article.path}">Read More</a>
                             </div>`);
     });
@@ -57,9 +59,11 @@ function updateAllPosts(){
         data[category].forEach(article=>{
             postsHolderHTML.push(`<div class="post">
                                     <img src="${article.src}">
-                                    <p class="img-label">${article.title}</p>
-                                    <a href="#" class="category">${category}</a>
-                                    <p class="highlight">${article.highlight}</p>
+                                    <div class="infoText">
+                                        <p class="img-label">${article.title}</p>
+                                        <a href="#" class="category">${article.category}</a>
+                                        <p class="highlight">${article.highlight}</p>
+                                    </div>
                                     <a class="btn read-more" href="${article.path}">Read More</a>
                                 </div>`);
         });
@@ -123,9 +127,11 @@ function searchItems(){
     dataFiltered.forEach(item => {
         if (item) postsHolderHTML.push(`<div class="post">
                                             <img src="${item.src}">
-                                            <p class="img-label">${item.title}</p>
-                                            <a href="#" class="category">${item.category}</a>
-                                            <p class="highlight">${item.highlight}</p>
+                                            <div class="infoText">
+                                                <p class="img-label">${item.title}</p>
+                                                <a href="#" class="category">${item.category}</a>
+                                                <p class="highlight">${item.highlight}</p>
+                                            </div>
                                             <a class="btn read-more" href="${item.path}">Read More</a>
                                         </div>`);
     });
