@@ -8,7 +8,9 @@ main {
     flex-direction: column;
     background-color: var(--purple);
 }
-
+#wrapper{
+    min-height: 80vh ;
+}
 .ab-div {
     flex: 2;
     display: flex;
