@@ -292,4 +292,18 @@ button, .btn{
         justify-content: flex-end;
         padding: 2rem;
     }
+    .sidebar{
+        max-width: 30vw;
+    }
+    .sidebar h2{
+        font-size: 3vw;
+    }
+    .highlightedArtist{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 1400px){
+    .highlightedArtist{
+        flex-direction: row;
+    }
 }
