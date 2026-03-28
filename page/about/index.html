@@ -60,40 +60,40 @@
                     <h2>Contact</h2>
                     <div class="form-question">
                         <label for="name">Name*</label>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name" name="name" required>
                         <p id="nameErrorMessage" class="hidden error-message">Do not leave blank</p>
                     </div>
                     <div class="form-question">
                         <label for="email">Email*</label>
-                        <input id="email" name="email"> 
+                        <input id="email" name="email" type="email" required> 
                         <p id="mailErrorMessage" class="hidden error-message">Do not leave blank</p>
                     </div>
                     <div class="form-question">
                         <label for="tel">Phone</label>
-                        <input id="tel" name="tel">
+                        <input id="tel" name="tel" type="tel">
                         <p id="telErrorMessage" class="hidden error-message">Do not leave blank</p>
                     </div>
                     <div class="form-question">
                         <p>Purpose*</p>
                         <div id="purpose-options-holder">
                             <div class="option">
-                                <input type="radio" id="band-submission" name="purpose" value="band-submission">
+                                <input type="radio" id="band-submission" name="purpose" value="band-submission" required>
                                 <label for="band-submission">Band Submission</label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="event-submission" name="purpose" value="event-submission">
+                                <input type="radio" id="event-submission" name="purpose" value="event-submission" required>
                                 <label for="event-submission">Event Submission</label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="venue-submission" name="purpose" value="venue-submission">
+                                <input type="radio" id="venue-submission" name="purpose" value="venue-submission" required>
                                 <label for="venue-submission">Venue Submission</label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="feedback" name="purpose" value="feedback">
+                                <input type="radio" id="feedback" name="purpose" value="feedback" required>
                                 <label for="feedback">Feedback</label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="other" name="purpose" value="other">
+                                <input type="radio" id="other" name="purpose" value="other" required>
                                 <label for="other">Other:</label>
                                 <input type="text" id="other-write-in" name="other-write-in">
                             </div>
@@ -102,7 +102,7 @@
                     </div>
                     <div class="form-question">
                         <label for="message">Message* <span id="stringLength">0/200</span></label>
-                        <textarea id="message" name="message"></textarea>
+                        <textarea id="message" name="message" required></textarea>
                         <p id="detailsErrorMessage" class="hidden error-message">Message too long</p>
                     </div>
                     <button class="contactSubmitBtn" type="submit">Submit</button>
