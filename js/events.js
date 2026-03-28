@@ -8,6 +8,8 @@ let month = date.getMonth();
 let year = date.getFullYear();
 let day = date.getDate();
 
+const $monthBtns = document.getElementById('monthSelectButtonsHolder');
+
 const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -139,9 +141,9 @@ function getEventDetailsHTML(indexes){
                         <p class="price">Cover: ${items[ev].price}</p>
                         <a class="link" href="${items[ev].link}">Get Tickets</a>
                     </div>
-                    <div id="eventBody">
+                    <div class="eventBody">
                         <img src="${items[ev].poster}">
-                        <div id="artists">
+                        <div class="artists">
                 `);
         if (items[ev].artistInfo)
         {
@@ -150,9 +152,11 @@ function getEventDetailsHTML(indexes){
                     <div class="artistInfo">
                         <h3 class="artistName">${artist.name}</h3>
                         <img src="${artist.photo}">
-                        <p class="artistGenre">${artist.genre}</p>
-                        <p class="artistDesc">${artist.desc}</p>
-                        <a href="${artist.url}">See More</a>
+                        <div>
+                            <p class="artistGenre">${artist.genre}</p>
+                            <p class="artistDesc">${artist.desc}</p>
+                            <a class="btn" href="${artist.path}">See More</a>
+                        </div>
                     </div>
                 `)
             })
@@ -166,6 +170,10 @@ function fillCalendar(){
     listView = 0;
     localStorage.setItem('listView', 0);
     //console.log(localStorage.getItem('listView'));
+    if ($monthBtns)
+    {
+        $monthBtns.classList.remove('hidden');
+    }
     
     day = date.getDate();
     calHeadingsHTML = [];
@@ -279,6 +287,10 @@ function changeWeek(changeBy){
 function fillCalList(){
     listView = 1;
     localStorage.setItem('listView', 1);
+    if ($monthBtns)
+    {
+        $monthBtns.classList.add('hidden');
+    }
     $eventsList.innerHTML = "";
 
     calListHTML = [];

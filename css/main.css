@@ -219,7 +219,9 @@ button, .btn{
     align-self: flex-end;
     margin-top: 1rem;
 }
-
+.hidden{
+    display: none !important;
+}
 @media screen and (min-width:768px){
     body{
         font-size: 20px;
