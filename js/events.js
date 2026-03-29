@@ -122,6 +122,7 @@ function getEventSummaryHTML(indexes){
     eventsHTML = []
     indexes.forEach((idx)=>{
             eventsHTML.push(`<div class="eventDispSm">
+                                <div class="eventDot"><p>•</p></div>
                                 <p class="evTitle">${items[idx].title}</p>
                             </div>`);
 
@@ -195,7 +196,7 @@ function fillCalendar(){
         evTitlesHTML.push(getEventSummaryHTML(getEventsIdx(i, month, year)));
         //console.log(evTitlesHTML);
         calDaysHTML.push(`
-            <div class="calDay" data-day="${i}" data-month="${month}" data-year="${year}">
+            <div class="calDay isCalendar" data-day="${i}" data-month="${month}" data-year="${year}">
                 <p>${i}</p>
                 <div class="dayEvent">
                     ${evTitlesHTML.join("")}
@@ -310,7 +311,7 @@ function fillCalList(){
         //console.log(listDay);
         //console.log(weekDay);
         calListHTML.push(`
-            <div class="calDay" data-day="${listDay.getDate()}" data-month="${listDay.getMonth()}" data-year="${listDay.getFullYear()}">
+            <div class="calDay isList" data-day="${listDay.getDate()}" data-month="${listDay.getMonth()}" data-year="${listDay.getFullYear()}">
                 <h3>${dayNames[weekDay]} ${listDay.getDate()}</h3>
                 <div class="dayEvent">
                     ${getEventSummaryHTML(getEventsIdx(listDay.getDate(), month, year))}

@@ -228,7 +228,16 @@ p {
 .btn{
     margin-top: 1rem
 }
-
+.calDay.isCalendar .evTitle{
+    display: none;
+}
+.calDay.isCalendar .dayEvent{
+    display: flex;
+    flex-direction: row;
+}
+.calDay.isList .eventDot{
+    display: none;
+}
 
 @media screen and (min-width: 768px) {
     h1 {
@@ -320,6 +329,17 @@ p {
     .eventBody .artists .artistInfo img {
         width: 100%;
         max-width: 300px;
+    }
+    .calDay.isCalendar .evTitle{
+        display: block;
+    }
+    .calDay.isCalendar .eventDot{
+        display: none;
+    }
+    #calendarDisplay .dayEvent{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
     }
 }
 @media screen and (min-width: 1200px){
