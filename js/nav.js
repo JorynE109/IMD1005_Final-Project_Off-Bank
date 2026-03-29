@@ -28,6 +28,7 @@ let $navHTML;
 if (pageIcons[page] == undefined)
 {
     $navHTML = `<div id="mobileHeader">
+        <div id="blurFilter"></div>
         <div id="mobileNav">
             <div id="mobileNavToggleContainer">
                 <button type="button" id="mobileNavToggle" onclick="toggleMobileLinks()">${hamburgerIcon}</button>
@@ -52,6 +53,7 @@ if (pageIcons[page] == undefined)
 else{
     $navHTML = `
     <div id="mobileHeader">
+        <div id="blurFilter"></div>
         <div id="mobileNav">
             <div id="mobileNavToggleContainer">
                 <button type="button" id="mobileNavToggle" onclick="toggleMobileLinks()">${hamburgerIcon}</button>
@@ -76,12 +78,26 @@ else{
 
 const $nav = document.querySelector('nav');
 insertNav();
-async function insertNav(){
-    $nav.innerHTML = $navHTML;
-}
+
+
 const $mobileLinksContainer = document.getElementById('mobileLinksContainer');
 const $mobileLinksToggle = document.getElementById('mobileNavToggle');
+const $blurFilter = document.getElementById('blurFilter');
+
+async function insertNav(){
+    $nav.innerHTML = $navHTML;
+    setTimeout(() => {
+        $blurFilter.style.opacity = 0
+        }, 480);
+    //setTimeout($blurFilter.style.opacity = 0, 400);
+}
+
+$blurFilter.addEventListener('click', (event)=>{
+    toggleMobileLinks();
+})
 
 function toggleMobileLinks(){
     $mobileLinksContainer.classList.toggle('show');
+    $blurFilter.style.opacity = 'inherit';
+    $blurFilter.classList.toggle('show');
 }
