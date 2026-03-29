@@ -238,7 +238,14 @@ p {
 .calDay.isList .eventDot{
     display: none;
 }
-
+.calendarDay p span{
+    display: none;
+}
+@media screen and (min-width: 500px) {
+    .calendarDay p span.cont{
+        display: inline;
+    }
+}
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 80px;
@@ -340,6 +347,11 @@ p {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+    }
+}
+@media screen and (min-width: 1080px){
+    .calendarDay p span.comp{
+        display: inline;
     }
 }
 @media screen and (min-width: 1200px){

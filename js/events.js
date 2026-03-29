@@ -11,7 +11,14 @@ let day = date.getDate();
 const $monthBtns = document.getElementById('monthSelectButtonsHolder');
 
 const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const dayNames = [
+    "S<span class='cont'>un</span><span class='comp'>day</span>", 
+    "M<span class='cont'>on</span><span class='comp'>day</span>", 
+    "T<span class='cont'>ue</span><span class='comp'>sday</span>", 
+    "W<span class='cont'>ed</span><span class='comp'>nesday</span>", 
+    "T<span class='cont'>hu</span><span class='comp'>rsday</span>", 
+    "F<span class='cont'>ri</span><span class='comp'>day</span>", 
+    "S<span class='cont'>at</span><span class='comp'>urday</span>"];
 
 const $monthSelectButtonsHolder = document.getElementById('monthSelectButtonsHolder');
 let listView = 0;
