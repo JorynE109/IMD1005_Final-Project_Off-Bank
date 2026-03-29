@@ -94,6 +94,8 @@ async function insertNav(){
 
 $blurFilter.addEventListener('click', (event)=>{
     toggleMobileLinks();
+    $blurFilter.style.opacity = 0;
+
 })
 
 function toggleMobileLinks(){
