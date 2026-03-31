@@ -156,13 +156,13 @@
         "venue": "House of Targ",
         "price": 15,
         "url": "https://www.houseoftarg.com/concert-listings-events/ba-johnston-sons-of-butcher-thnderkok-april-2026",
-        "poster": "img/event/2026-04-04_BAJ.webp",
+        "poster": "/img/event/2026-04-04_BAJ.webp",
         "artistInfo": [
             {
                 "name": "B.A. Johnston",
                 "genre": "Folk Punk",
                 "url": "https://www.bajohnston.ca/",
-                "photo": "img/artist/bajohnston.jpeg",
+                "photo": "/img/artist/bajohnston.jpeg",
                 "desc": "Canada’s most prolific entertainer is back to play selections from his 20+ year/13+ album career. Meet you in the bathroom for B.A.'s customary closing number.",
                 "path": "/post/?title=B.A. Johnston&type=artist"
             },
@@ -170,14 +170,14 @@
                 "name": "Sons of Butcher",
                 "genre": "Comedy Rock",
                 "url": "https://www.sonsofbutcher.ca/",
-                "photo": "img/artist/sons-of-butcher.webp",
+                "photo": "/img/artist/sons-of-butcher.webp",
                 "desc": "Sons of Butcher is a Canadian rock band and was once a cartoon series on Teletoon. Their music fuses vulgar absurdist comedy with rock music in a style that is described as 'Tenacious D meets Spinal Tap'.",
                 "path": "/post/?title=Sons of Butcher&type=artist"
             },
             {
                 "name": "Thunderkok",
                 "genre": "Metal",
-                "photo": "img/artist/thunderkok.jpg",
+                "photo": "/img/artist/thunderkok.jpg",
                 "url": "https://www.instagram.com/thunderkokrocks/",
                 "desc": "New Wave of Canadian Heavy Metal. Ottawa's most outrageous noize makers. Beer-fueled, riff-heavy, and built for chaos. With scorching leads, crushing riffs, and wild onstage antics, they turn every gig into a booze-soaked spectacle of pure mayhem. Lord help us all.",
                 "path": "/post/?title=Thunderkok&type=artist"
@@ -190,13 +190,13 @@
         "venue": "House of Targ",
         "price": 25,
         "url": "https://www.houseoftarg.com/concert-listings-events/the-meteors-uk-psychobilly-gunsmoke-slo-tom-the-handsome-devils",
-        "poster": "img/event/2026-04-07_Meteors.webp",
+        "poster": "/img/event/2026-04-07_Meteors.webp",
         "artistInfo": [
             {
                 "name": "The Meteors",
                 "genre": "Psychobilly",
                 "url": "https://www.instagram.com/the.meteors.official",
-                "photo": "img/artist/the-meteors.jpg",
+                "photo": "/img/artist/the-meteors.jpg",
                 "desc": "The undisputed kings of psychobilly—loud, fast, and fiercely original. Since exploding out of London in 1980, they’ve carved their own bloody path by fusing raw punk energy with rockabilly swagger and a love for all things macabre. The Meteors continue to dominate the genre they helped create.",
                 "path": "/post/?title=The Meteors&type=artist"
             },
@@ -204,14 +204,14 @@
                 "name": "Gunsmoke",
                 "genre": "Rockabilly/Punk",
                 "url": "https://gunsmoke.bandcamp.com/album/gunsmoke",
-                "photo": "img/artist/gunsmoke.jpg",
+                "photo": "/img/artist/gunsmoke.jpg",
                 "desc": "Exhumed for your listening pleasure.",
                 "path": "/post/?title=Gunsmoke&type=artist"
             },
             {
                 "name": "Slo' Tom & The Handsome Devils",
                 "genre": "Hardcore Country",
-                "photo": "img/artist/slo-tom.jpg",
+                "photo": "/img/artist/slo-tom.jpg",
                 "url": "https://www.instagram.com/slotom_and_the_handsome_devils/",
                 "desc": "If you like Hank I, Hank III & Social D you’ll get along famously with 613 legend SLO’ TOM & his band THE HANDSOME DEVILS. Prepare to be thoroughly entertained.",
                 "path": "/post/?title=Slo' Tom & The Handsome Devils&type=artist"
@@ -224,7 +224,7 @@
         "venue": "House of Targ",
         "price": 15,
         "url": "https://www.houseoftarg.com/concert-listings-events/moonbeam-hans-sugar-bomb",
-        "poster": "img/event/2026-04-09_MoonBeam.webp",
+        "poster": "/img/event/2026-04-09_MoonBeam.webp",
         "artistInfo": [
             {
                 "name": "MOONBEAN",
@@ -238,14 +238,14 @@
                 "name": "Hans!",
                 "genre": "Electronic Indie Pop",
                 "url": "https://linktr.ee/hansinator",
-                "photo": "img/artist/hans!.jpg",
+                "photo": "/img/artist/hans!.jpg",
                 "desc": "Hans!' goal is to surprise and inspire, creating an energetic, electric mood, but also sharing stories through thoughtful lyrics and melodies. His dynamic voice and performance style create an atmosphere of welcome celebration. What are we celebrating? The spirit of creativity.",
                 "path": "/post/?title=Hans!&type=artist"
             },
             {
                 "name": "Sugar Bomb!",
                 "genre": "Garage/Pop Punk",
-                "photo": "img/artist/sugar-bomb.jpg",
+                "photo": "/img/artist/sugar-bomb.jpg",
                 "url": "https://linktr.ee/sugarbombott",
                 "desc": "4 friends from Ottawa–Gatineau cranking out weird, high-energy tunes and loud harmonies.",
                 "path": "/post/?title=Sugar Bomb!&type=artist"
@@ -300,13 +300,13 @@
         "venue": "House of Targ",
         "price": 20,
         "url": "https://www.houseoftarg.com/concert-listings-events/pinksnail-rumination-year-thee-male-nurse-dj-hug-mosh",
-        "poster": "img/event/2026-04-16_Pinksnail.webp",
+        "poster": "/img/event/2026-04-16_Pinksnail.webp",
         "artistInfo": [
             {
                 "name": "Pinksnail",
                 "genre": "Choral Punk",
                 "url": "https://linktr.ee/pinksnail",
-                "photo": "img/artist/pinksnail.jpg",
+                "photo": "/img/artist/pinksnail.jpg",
                 "desc": " ",
                 "path": "/post/?title=Pinksnail&type=artist"
             },
@@ -314,14 +314,14 @@
                 "name": "Rumination Year",
                 "genre": "Punk",
                 "url": "https://mattygrace.bandcamp.com/album/rumination-year-2",
-                "photo": "img/artist/rumination-year.jpg",
+                "photo": "/img/artist/rumination-year.jpg",
                 "desc": "Rumination Year is Wizard Matty’s “solo full band”. It’s got THEE Davey and Jordy from crusades/creeps/zebrassieres. Big HUSKER DÜ energy.",
                 "path": "/post/?title=Rumination Year&type=artist"
             },
             {
                 "name": "Thee Male Nurse",
                 "genre": "Indie Folk",
-                "photo": "img/artist/thee-male-nurse.jpg",
+                "photo": "/img/artist/thee-male-nurse.jpg",
                 "url": "https://malenurse.bandcamp.com/",
                 "desc": "Ottawa Valley experimental indie folk.",
                 "path": "/post/?title=Thee Male Nurse&type=artist"
@@ -334,13 +334,13 @@
         "venue": "House of Targ",
         "price": 15,
         "url": "https://www.houseoftarg.com/concert-listings-events/chas-trenchfoot-fantomfez",
-        "poster": "img/event/2026-04-23_Chaos.webp",
+        "poster": "/img/event/2026-04-23_Chaos.webp",
         "artistInfo": [
             {
                 "name": "Chaös",
                 "genre": "Heavy Rock",
                 "url": "https://linktr.ee/LetsCauseChaos?utm_source=linktree_profile_share&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnQTSB5v3Jtf1frxtJDQdi5ji0v3P-pb1ePGr-AbmlFeI8NZMcMpf8i-zeMEQ_aem_PvwR4b7D_NyqtlmMybe1_g&utm_medium=social&utm_content=link_in_bio",
-                "photo": "img/artist/chaos.jpg",
+                "photo": "/img/artist/chaos.jpg",
                 "desc": "Ottawa heavy rock band.",
                 "path": "/post/?title=Chaös&type=artist"
             },
@@ -348,14 +348,14 @@
                 "name": "Fantomfez",
                 "genre": "Prog Instrumental Rock",
                 "url": "https://www.instagram.com/fantomfez",
-                "photo": "img/artist/fantomfez.jpg",
+                "photo": "/img/artist/fantomfez.jpg",
                 "desc": " ",
                 "path": "/post/?title=Fantomfez&type=artist"
             },
             {
                 "name": "Trenchfoot",
                 "genre": "Alt Metal",
-                "photo": "img/artist/trenchfoot.jpg",
+                "photo": "/img/artist/trenchfoot.jpg",
                 "url": "https://trenchfootaudio.bandcamp.com/",
                 "desc": "Trench Foot was born in the deep woods of Ontario and has now relocated to Montreal. The project has quickly risen in the bass music ranks after a switch to dnb from his early dubstep roots. Recently playing all over eastern Canada and with releases spanning multiple genres, he is sure to bring a unique sound.",
                 "path": "/post/?title=Trenchfoot&type=artist"
@@ -368,13 +368,13 @@
         "venue": "House of Targ",
         "price": 20,
         "url": "https://www.houseoftarg.com/concert-listings-events/madeline-goldstein-la-dreamy-dark-synth-pop-frissons-que-darkwave-dark-discothque-djs",
-        "poster": "img/event/2026-04-29_Madeline.webp",
+        "poster": "/img/event/2026-04-29_Madeline.webp",
         "artistInfo": [
             {
                 "name": "Madeline Goldstein",
                 "genre": "Dark Synth-Pop",
                 "url": "https://www.instagram.com/madelinegoldstein_/?hl=en",
-                "photo": "img/artist/madeline-goldstein.jpg",
+                "photo": "/img/artist/madeline-goldstein.jpg",
                 "desc": "Founded after relocating to LA in 2019, Madeline has now self-released an experimental full-length album ('Forget This,' 2020) and several singles showcasing their ethereal dream-pop presence and ever-evolving home production skills. With emotion and a strong ear for pop melody, Madeline Goldstein echos the energies of new wave, dream-pop, and dark wave, all while showcasing the vocal range and passion of femme pop icons and 80's theatrics. Her lineup featured a rotating cast of textural guitar and the occasional passionate saxophonist.",
                 "path": "/post/?title=Madeline Goldstein&type=artist"
             },
@@ -382,7 +382,7 @@
                 "name": "Frissons",
                 "genre": "Darkwave",
                 "url": "https://www.instagram.com/frissons1986/?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBEycnl0VzRtQUdVd2VGckRjRHNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR6_Wdvu8DOvvjkaIW0esGNHE4XzgikxEwi8NCK7up3B4gH4cRjTPaalPcuYig_aem_FVLIAR2S3MU90d4OacFtNA",
-                "photo": "img/artist/frissons.jpg",
+                "photo": "/img/artist/frissons.jpg",
                 "desc": "A new dark electronic dance music band featuring Annick Giroux and Nathaniel Hébert. The name, inspired by Cronenberg’s film Shivers, reflects their eerie, cinematic sound, which blends darkwave, italo, EBM, and synthpop elements.",
                 "path": "/post/?title=Frissons&type=artist"
             }
