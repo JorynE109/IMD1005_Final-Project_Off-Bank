@@ -6,7 +6,7 @@ main {
     gap: 2rem;
     display: flex;
     flex-direction: column;
-    background-color: var(--purple);
+    background-color: var(--transparent);
 }
 #wrapper{
     min-height: 80vh ;
@@ -19,7 +19,7 @@ main {
     gap: 20px;
     height: fit-content;
     padding: 2rem;
-    border: 1px solid var(--white);
+    border: 5px solid var(--purple);
     border-radius: 20px;
     line-height: 1.5;
     background-color: var(--white);
@@ -52,7 +52,7 @@ label {
     line-height: 1.5;
 }
 #purpose-options-holder label {
-    font-family: "elza-narrow", sans-serif;
+    font-family: "chainprinter", sans-serif;
 }
 
 form {
@@ -94,7 +94,7 @@ input:active, input:focus {
     display: none;
 }
 .contactSubmitBtn {
-    font-family: "cotton", sans-serif;
+    font-family: "chainprinter", sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
     letter-spacing: 3px;

@@ -4,13 +4,16 @@
 .eventPrev{
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 4rem;
     padding: 0.5rem 0;
     width: 100%;
     justify-content: space-between;
 }
 main img{
     width: 100%;
+}
+main {
+  max-width: 850px;
 }
 main{
     flex-direction: column;
@@ -22,8 +25,55 @@ main{
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
-    gap: 2rem;
+    gap: 3rem;
 }
 #artistHighlight{
     max-width: 500px;
+}
+.hero {
+  margin-bottom: 3rem;
+}
+
+.hero p {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+.hero p {
+  font-family: "chainprinter", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+}
+.section-sub {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  opacity: 0.6;
+  margin-bottom: 1rem;
+}
+#recentPostsDisplay {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#recentPostsDisplay a {
+  padding-left: 0.5rem;
+  border-left: 2px solid transparent;
+  transition: 0.2s;
+}
+#recentPostsDisplay a:hover {
+  border-left: 2px solid currentColor;
+  transform: translateX(4px);
+}
+img {
+  border-radius: 6px;
 }

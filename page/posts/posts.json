@@ -86,7 +86,34 @@
             "path": "/post/?title=This is our Free Bird&type=album",
             "date": "2026-03-26",
             "content": "This is the content of the entire article."
+        },
+        { 
+            "src": "/img/album/cliche.jpeg",
+            "title": "Cliché",
+            "category": "album",
+            "albumType": "ep",
+            "genre": "Punk",
+            "artistName": "Sun Dried Flies",
+            "artistPath": "/post/?title=Sun Dried Flies&type=artist",
+            "highlight": "This is the highlight sentence",
+            "path": "/post/?title=Cliché&type=album",
+            "date": "2026-03-26",
+            "content": "This is the content of the entire article."
+        },
+        {
+            "src": "/img/album/rainy.jpeg",
+            "title": "Rainy",
+            "category": "album",
+            "albumType": "ep",
+            "genre": "Punk",
+            "artistName": "Taxi Girls",
+            "artistPath": "/post/?title=Taxi Girls&type=artist",
+            "highlight": "This is the highlight sentence",
+            "path": "/post/?title=Rainy&type=album",
+            "date": "2026-03-26",
+            "content": "This is the content of the entire article."
         }
+
     ],
     "venue":
     [
@@ -100,16 +127,39 @@
             "path": "/post/?title=House of Targ&type=venue",
             "date": "2026-03-25",
             "content": "This is the content of the entire article."
+        },
+        {
+            "src": "/img/venue/rainbowbistro.png",
+            "title": "Rainbow Bistro",
+            "category": "venue",
+            "genre": "Alt, Indie, Rock",
+            "locale": "76 Murray Street, Ottawa",
+            "highlight": "Iconic Ottawa venue known for its intimate atmosphere and support of local artists.",
+            "path": "/post/?title=Rainbow Bistro&type=venue",
+            "date": "2026-03-25",
+            "content": "This is the content of the entire article."
+        },
+        {
+            "src": "/img/venue/liveonelgin.png",
+            "title": "Live On Elgin",
+            "category": "venue",
+            "genre": "Alt, Folk, Indie",
+            "locale": "220 Elgin Street, Ottawa",
+            "highlight": "Vibrant downtown venue known for diverse lineups and a welcoming vibe.",
+            "path": "/post/?title=Live On Elgin&type=venue",
+            "date": "2026-03-25",
+            "content": "This is the content of the entire article."
         }
+
     ],
     "article":
     [
         {
-            "src": "/img/article/def.png",
-            "title": "Test Article",
+            "url": "https://www.ottawashowbox.com/2020/02/18/welcome-to-house-of-targ-ottawas-unique-venue/",
+            "title": "Welcome to House of Targ: Ottawa’s Unique Venue",
             "category": "article",
-            "highlight": "This is the highlight sentence",
-            "path": "/post/testpost/",
+            "highlight": "by Emily Britton",
+            "path": "/post/?title=Welcome to House of Targ: Ottawa’s Unique Venue&type=article",
             "date": "2026-03-18",
             "content": "This is the content of the entire article."
         }
