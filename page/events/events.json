@@ -230,7 +230,7 @@
                 "name": "MOONBEAN",
                 "genre": "Experimental Synth-Pop",
                 "url": "https://linktr.ee/moonbeanmusic",
-                "photo": "img/artist/moonbean.jpg",
+                "photo": "/img/artist/moonbean.jpg",
                 "desc": "Ontario-based hardware electronic artist who mixes disco, acid house, and electro with messages of radical self-love and empowerment.",
                 "path": "/post/?title=MOONBEAN&type=artist"
             },
