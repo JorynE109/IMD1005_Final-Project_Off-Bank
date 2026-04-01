@@ -8,7 +8,7 @@ window.addEventListener('load', (event) => {
         loadUpcomingEvents();
 });
 async function loadUpcomingEvents(){
-    const res = await fetch('/page/events/events.json');
+    const res = await fetch('../events/events.json');
     const data = await res.json();
     
     if(res.ok) $events = data;
@@ -44,7 +44,7 @@ function updateShowsDisplay(){
         {
             console.log(dataFiltered[i].title);
             upcomingShowsHTML.push(`
-            <a class="show" href="/page/events/date/?date=${dataFiltered[i].date}&title=${dataFiltered[i].title}">
+            <a class="show" href="../events/date/?date=${dataFiltered[i].date}&title=${dataFiltered[i].title}">
                 <p class="showTitle">${dataFiltered[i].title}</p><p class="showDate">${dataFiltered[i].date}</p>
             </a>
             `)

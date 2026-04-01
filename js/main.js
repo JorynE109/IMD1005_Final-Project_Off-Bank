@@ -12,7 +12,7 @@ window.addEventListener('load', (event) => {
 });
 async function loadEvents(){
     try{
-        const res = await fetch('/page/events/events.json');
+        const res = await fetch('../events/events.json');
         const data = await res.json();
         if(res.ok) events = data;
         updateNewsDisplay();
@@ -29,7 +29,7 @@ function updateNewsDisplay()
     {
         if ((new Date(events[i].date)) >= (new Date((new Date()).getFullYear(), (new Date()).getMonth(), (new Date()).getDate())) && eventsHTML.length < 3)
         {
-            eventsHTML.push(`<a class="eventPrev" href="/page/events/date/?date=${events[i].date}&title=${events[i].title}">
+            eventsHTML.push(`<a class="eventPrev" href="../events/date/?date=${events[i].date}&title=${events[i].title}">
                                 <p class="evTitle">${events[i].title}</p>
                                 <p class="evDate">${events[i].date}</p>
                              </a>`);
@@ -39,7 +39,7 @@ function updateNewsDisplay()
 }
 async function loadPosts(){
     try{
-        const res = await fetch('/page/posts/posts.json');
+        const res = await fetch('../posts/posts.json');
         const data = await res.json();
         
         if(res.ok) posts = data;

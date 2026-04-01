@@ -16,13 +16,13 @@ if (page == "date")
 }
 console.log(page);
 const pageIcons = {
-    "home": `<img class="navicon" src="/img/icon/icons8-home.svg">`,
-    "posts": `<img class="navicon" src="/img/icon/icons8-article.svg">`,
-    "events": `<img class="navicon" src="/img/icon/icons8-calendar-24.png">`,
-    "about": `<img class="navicon" src="/img/icon/icons8-smile-24.png">`,
-    "event": `<img class="navicon" src="/img/icon/icons8-smile-24.png">`
+    "home": `<img class="navicon" src="../img/icon/home-48.png">`,
+    "posts": `<img class="navicon" src="../img/icon/article-48.png">`,
+    "events": `<img class="navicon" src="../img/icon/calendar-48.png">`,
+    "about": `<img class="navicon" src="../img/icon/smile-48.png">`,
+    "event": `<img class="navicon" src="../img/icon/smile-48.png">`
 }
-const hamburgerIcon = `<img class="navHamburger" src="/img/icon/icons8-hamburger.svg">`
+const hamburgerIcon = `<img class="navHamburger" src="../img/icon/hamburger-48.png">`
 let $navHTML;
 
 if (pageIcons[page] == undefined)
@@ -35,19 +35,18 @@ if (pageIcons[page] == undefined)
                 <div id="pageDisplay">${page}</div>
             </div>
             <div id="mobileLinksContainer">
-                <a href="/"><span class="navtitle">Home</span><img class="navicon" src="/img/icon/icons8-home.svg"></a>
-                <a href="/page/posts/"><span class="navtitle">Posts</span><img class="navicon" src="/img/icon/icons8-article.svg"></a>
-                <a href="/page/events/"><span class="navtitle">Events</span><img class="navicon" src="/img/icon/icons8-calendar-24.png"></a>
-                <a href="/page/about/"><span class="navtitle">About</span><img class="navicon" src="/img/icon/icons8-smile-24.png"></a>
+                <a href="../"><span class="navtitle">Home</span>${pageIcons.home}</a>
+                <a href="../posts/"><span class="navtitle">Posts</span>${pageIcons.posts}</a>
+                <a href="../events/"><span class="navtitle">Events</span>${pageIcons.events}</a>
+                <a href="../about/"><span class="navtitle">About</span>${pageIcons.about}</a>
             </div>
         </div>
     </div>
     <div id="widescreenNav">
-        <!-- the spans gotta be switched for icons, keep class the same -->
-        <a href="/" class="active"><span class="navtitle">Home</span><img class="navicon" src="/img/icon/icons8-home.svg"></a>
-        <a href="/page/posts/"><span class="navtitle">Posts</span><img class="navicon" src="/img/icon/icons8-article.svg"></a>
-        <a href="/page/events/"><span class="navtitle">Events</span><img class="navicon" src="/img/icon/icons8-calendar-24.png"></a>
-        <a href="/page/about/"><span class="navtitle">About</span><img class="navicon" src="/img/icon/icons8-smile-24.png"></a>
+        <a href="../"><span class="navtitle">Home</span>${pageIcons.home}</a>
+        <a href="../posts/"><span class="navtitle">Posts</span>${pageIcons.posts}</a>
+        <a href="../events/"><span class="navtitle">Events</span>${pageIcons.events}</a>
+        <a href="../about/"><span class="navtitle">About</span>${pageIcons.about}</a>
     </div>`;
 }
 else{
@@ -57,22 +56,21 @@ else{
         <div id="mobileNav">
             <div id="mobileNavToggleContainer">
                 <button type="button" id="mobileNavToggle" onclick="toggleMobileLinks()">${hamburgerIcon}</button>
-                <div id="pageDisplay">${pageIcons[page]}${page}</div>
+                <div id="pageDisplay">${pageIcons[page]}<span>${page}</span></div>
             </div>
             <div id="mobileLinksContainer">
-                <a href="/"><span class="navtitle">Home</span><img class="navicon" src="/img/icon/icons8-home.svg"></a>
-                <a href="/page/posts/"><span class="navtitle">Posts</span><img class="navicon" src="/img/icon/icons8-article.svg"></a>
-                <a href="/page/events/"><span class="navtitle">Events</span><img class="navicon" src="/img/icon/icons8-calendar-24.png"></a>
-                <a href="/page/about/"><span class="navtitle">About</span><img class="navicon" src="/img/icon/icons8-smile-24.png"></a>
+                <a href="../"><span class="navtitle">Home</span>${pageIcons.home}</a>
+                <a href="../posts/"><span class="navtitle">Posts</span>${pageIcons.posts}</a>
+                <a href="../events/"><span class="navtitle">Events</span>${pageIcons.events}</a>
+                <a href="../about/"><span class="navtitle">About</span>${pageIcons.about}</a>
             </div>
         </div>
     </div>
     <div id="widescreenNav">
-        <!-- the spans gotta be switched for icons, keep class the same -->
-        <a href="/" class="active"><span class="navtitle">Home</span><img class="navicon" src="/img/icon/icons8-home.svg"></a>
-        <a href="/page/posts/"><span class="navtitle">Posts</span><img class="navicon" src="/img/icon/icons8-article.svg"></a>
-        <a href="/page/events/"><span class="navtitle">Events</span><img class="navicon" src="/img/icon/icons8-calendar-24.png"></a>
-        <a href="/page/about/"><span class="navtitle">About</span><img class="navicon" src="/img/icon/icons8-smile-24.png"></a>
+        <a href="../"><span class="navtitle">Home</span>${pageIcons.home}</a>
+        <a href="../posts/"><span class="navtitle">Posts</span>${pageIcons.posts}</a>
+        <a href="../events/"><span class="navtitle">Events</span>${pageIcons.events}</a>
+        <a href="../about/"><span class="navtitle">About</span>${pageIcons.about}</a>
     </div>`;
 }
 
