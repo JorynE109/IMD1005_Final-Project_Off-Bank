@@ -10,10 +10,6 @@ if (page == "" || page == "IMD1005_Final-Project_Off-Bank")
 {
     page = "home";
 }
-if (page == "date")
-{
-    page = "event";
-}
 console.log(page);
 const pageIcons = {
     "home": `<img class="navicon" src="img/icon/home-48.png">`,
