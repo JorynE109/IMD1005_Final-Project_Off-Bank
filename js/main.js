@@ -11,21 +11,22 @@ window.addEventListener('load', (event) => {
         loadPosts();
 });
 async function loadEvents(){
-    const res = await fetch('/page/events/events.json');
-    const data = await res.json();
+    try{
+        const res = await fetch('/page/events/events.json');
+        const data = await res.json();
+        if(res.ok) events = data;
+        updateNewsDisplay();
+    }catch(error){
+        console.log(error);
+        $newsDisplay.innerHTML = `<h3>No Events</h3><p>There are no events to display at this time. Please try again later.</p>`
+    }
     
-    if(res.ok) events = data;
-    console.log(events);
-    
-    updateNewsDisplay();
 }
 function updateNewsDisplay()
 {
-    console.log("updating newsDisplay")
     let eventsHTML = [];
     for (let i = 0; i < events.length; i++)
     {
-        //console.log(new Date((new Date()).getFullYear(), (new Date()).getMonth(), (new Date()).getDate()))
         if ((new Date(events[i].date)) >= (new Date((new Date()).getFullYear(), (new Date()).getMonth(), (new Date()).getDate())) && eventsHTML.length < 3)
         {
             eventsHTML.push(`<a class="eventPrev" href="/page/events/date/?date=${events[i].date}&title=${events[i].title}">
@@ -37,14 +38,19 @@ function updateNewsDisplay()
     $newsDisplay.innerHTML = eventsHTML.join("");
 }
 async function loadPosts(){
-    const res = await fetch('/page/posts/posts.json');
-    const data = await res.json();
-    
-    if(res.ok) posts = data;
-    console.log(posts);
+    try{
+        const res = await fetch('/page/posts/posts.json');
+        const data = await res.json();
+        
+        if(res.ok) posts = data;
 
-    updatePostsDisplay();
-    updateArtistHighlight();
+        updatePostsDisplay();
+        updateArtistHighlight();
+    }catch(error){
+        console.log(error);
+        $recentPostsDisplay.innerHTML = `<h3>No Posts</h3><p>There are no posts to display at this time. Please try again later.</p>`
+        $artistHighlight.innerHTML = `<p>Unable to load artist details</p>`
+    }
 }
 function updatePostsDisplay()
 {
@@ -63,13 +69,6 @@ function updatePostsDisplay()
     const sorted = allPosts.sort((a, b) => (new Date(a.date)) - (new Date(b.date))).reverse();
     
     console.log(sorted);
-    
-    // const sorted = [];
-
-    // for(let i = 0; i < (allPosts.length); i++)
-    // {
-    //     sorted[i] = allPosts[(allPosts.length - 1) - i];
-    // }
 
     for (let i = 0; i < 3; i++)
     {
