@@ -92,10 +92,11 @@ function updateArtistHighlight()
     });
     
     const dailyArtist = (new Date().getDate() % allArtists.length);
-
+    const artistSRC = posts['artist'][dailyArtist].src.split('/');
+    artistSRC.shift();
     $artistHighlight.innerHTML = `
     <div class="highlightedArtist">
-        <img class="artistImg" src="${posts['artist'][dailyArtist].src}">
+        <img class="artistImg" src="${artistSRC.join('/')}">
         <div class="artistInfoText">
             <p class="artistTitle">${posts['artist'][dailyArtist].title}</p>
             <p class="artistGenre">${posts['artist'][dailyArtist].genre}</p>
