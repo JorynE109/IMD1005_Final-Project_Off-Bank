@@ -18,10 +18,15 @@ window.addEventListener("load", (event) => {
 });
 
 async function fetchItems(){
-    const res = await fetch('/page/posts/posts.json');
-    const data = await res.json();
+    try{
+        const res = await fetch('/page/posts/posts.json');
+        data = await res.json();
+        if(res.ok) items = data;
+    }
+    catch (error){
+        $postsHolder.innerHTML = `<h2>Unable to load Posts</h2><p>We apologize for the inconvenience. Try again later.</p>`
+    }
     
-    if(res.ok) items = data;
     determinePostsUpdate();
 }
 function determinePostsUpdate(){

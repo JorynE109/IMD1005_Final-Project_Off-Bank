@@ -282,7 +282,26 @@ footer #footerText{
 #footerText a{
     color: var(--white);
 }
-
+#loadingDisp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+}
+#loadingDisp h2{
+    font-size: 12vw;
+}
+#loadingDisp img.loadingGIF{
+    max-width: 96px;
+    width: 20vw;
+}
+@media screen and (min-width:475px){
+    #loadingDisp h2{
+        font-size: 8vw;
+    }
+}
 @media screen and (min-width:768px){
     body{
         font-size: 20px;
@@ -356,6 +375,18 @@ footer #footerText{
         justify-content: flex-end;
         padding: 2rem;
     }
+    #loadingDisp{
+        flex-direction: row;
+        gap: 1rem;
+        grid-column: span 3;
+        justify-content: center;
+    }
+    #loadingDisp h2{
+        font-size: 6vw;
+    }
+    #loadingDisp img.loadingGIF{
+        width: 12vw;
+    }
     .sidebar{
         max-width: 30vw;
     }
@@ -394,6 +425,12 @@ footer #footerText{
         font-size: 1.3rem;
         gap: 1rem;
         justify-content: flex-end;
+    }
+    #loadingDisp h2{
+        font-size: 4vw;
+    }
+    #loadingDisp img.loadingGIF{
+        width: 8vw;
     }
 }
 @media screen and (min-width: 1400px){

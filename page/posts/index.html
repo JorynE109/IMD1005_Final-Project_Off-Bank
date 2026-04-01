@@ -62,7 +62,22 @@ background-repeat: repeat;
                 <button onclick="productSelected('venue')" class="categorySelection">Venues</button>
             </div>
 
-            <div id="postsHolder"></div>
+            <div id="postsHolder">
+                <div id="loadingDisp">
+                    <img class="loadingGIF"
+                        srcset="/img/icon/loading/loading-24.gif 24w,
+                            /img/icon/loading/loading-48.gif 48w,
+                            /img/icon/loading/loading-72.gif 72w,
+                            /img/icon/loading/loading-96.gif 96w,"
+                        sizes="(width <= 24px) 24w,
+                                (width <= 48px) 48w,
+                                (width <= 72px) 72w,
+                                96w"
+                        src="/img/icon/loading/loading-96.gif"
+                        alt="loading gif"/>
+                    <h2>Loading Posts</h2>
+                </div>
+            </div>
         </main>
     </div>
     <footer>
