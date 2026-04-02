@@ -6,9 +6,9 @@
             "name": "Taxi Girls",
             "genre": "Punk n Roll",
             "locale": "Ottawa",
-            "src": "/img/artist/taxi-girls.webp",
+            "src": "../img/artist/taxi-girls.webp",
             "url": "https://linktr.ee/taxigirlsmontreal",
-            "path": "/post/?title=Taxi Girls&type=artist",
+            "path": "../post/?title=Taxi Girls&type=artist",
             "date": "2026-03-27",
             "category": "artist",
             "highlight": "This is a description of taxi girls!"
@@ -17,9 +17,9 @@
             "title": "Sun Dried Flies",
             "genre": "Alternative Rock",
             "locale": "Prescott/Ottawa",
-            "src": "/img/artist/sun-dried-flies.webp",
+            "src": "../img/artist/sun-dried-flies.webp",
             "url": "https://sundriedflies.ca/home",
-            "path": "/post/?title=Sun Dried Flies&type=artist",
+            "path": "../post/?title=Sun Dried Flies&type=artist",
             "date": "2026-03-27",
             "category": "artist",
             "highlight": "This is a description of Sun Dried Flies!"
@@ -28,9 +28,9 @@
             "title": "Passenger Princess",
             "genre": "Punk",
             "locale": "Ottawa",
-            "src": "/img/artist/passenger-princess.webp",
+            "src": "../img/artist/passenger-princess.webp",
             "url": "",
-            "path": "/post/?title=Passenger Princess&type=artist",
+            "path": "../post/?title=Passenger Princess&type=artist",
             "date": "2026-03-27",
             "category": "artist",
             "highlight": "This is a description of PP!"
@@ -41,11 +41,11 @@
             "locale": "Ottawa",
             "category": "artist",
             "date": "2026-03-28",
-            "src": "/img/artist/HotSkins.jpg",
+            "src": "../img/artist/HotSkins.jpg",
             "url": "https://www.instagram.com/hotskinsofficial/",
             "desc": "HotSkins have been crafting a diverse collection of songs since 2018, driven by their love for making music and performing live. Their collaborative approach blends various genres, aiming to create music that resonated and inspires. HotSkins are focused on refining their unique sound and having a blast while doing it, all while hoping to leave a meaningful impact on their listeners.",
             "highlight": "HotSkins have been crafting a diverse collection of songs since 2018, driven by their love for making music and performing live.",
-            "path": "/post/?title=HotSkins&type=artist"
+            "path": "../post/?title=HotSkins&type=artist"
         },
         {
             "title": "It Shines",
@@ -53,11 +53,11 @@
             "locale": "Ottawa",
             "category": "artist",
             "date": "2026-03-28",
-            "src": "/img/artist/it-shines.png",
+            "src": "../img/artist/it-shines.png",
             "url": "https://www.instagram.com/itshines_sucks/",
             "highlight": "It Shines is a folk punk band from Ottawa, Ontario, Canada. Formed in early 2025, It Shines focuses on writing sensitive songs about their feelings, relationships, and experiences.",
             "desc": "It Shines is a folk punk band from Ottawa, Ontario, Canada. Forming in early 2025, It Shines focuses on writing sensitive songs about their feelings, relationships, and experiences. Sound-wise, they mix the energy and thoughtfulness of fourth-wave emo with the sound of indie folk. It Shines has been compared to artists like Bright Eyes, The Cure, and Big Thief. They have been playing shows since late 2025 and are currently in the process of recording and releasing music.",
-            "path": "/post/?title=It Shines&type=artist"
+            "path": "../post/?title=It Shines&type=artist"
         },
         {
             "title": "Candy Says",
@@ -65,51 +65,51 @@
             "locale": "Ottawa",
             "category": "artist",
             "date": "2026-03-28",
-            "src": "/img/artist/candy-says.jpg",
+            "src": "../img/artist/candy-says.jpg",
             "url": "https://www.instagram.com/candysaysband/",
             "highlight": "We are Candy Says! We are a 3 piece queer punk band from Ottawa, ON. Our influences include Wire, the Damned, Bikini kill and the Cramps. We have been a band for a little over a year and have been playing shows since august!",
             "desc": "We are Candy Says! We are a 3 piece queer punk band from Ottawa, ON. Our influences include Wire, the Damned, Bikini kill and the Cramps. We have been a band for a little over a year and have been playing shows since august!",
-            "path": "/post/?title=Candy Says&type=artist"
+            "path": "../post/?title=Candy Says&type=artist"
         }
     ],
     "album":
     [
         {
-            "src": "/img/album/this-is-our-free-bird.png",
+            "src": "../img/album/this-is-our-free-bird.png",
             "title": "This is our Free Bird",
             "category": "album",
             "albumType": "ep",
             "genre": "Punk",
             "artistName": "Passenger Princess",
-            "artistPath": "/post/?title=Passenger Princess&type=artist",
+            "artistPath": "../post/?title=Passenger Princess&type=artist",
             "highlight": "This is the highlight sentence",
-            "path": "/post/?title=This is our Free Bird&type=album",
+            "path": "../post/?title=This is our Free Bird&type=album",
             "date": "2026-03-26",
             "content": "This is the content of the entire article."
         },
         { 
-            "src": "/img/album/cliche.jpeg",
+            "src": "../img/album/cliche.jpeg",
             "title": "Cliché",
             "category": "album",
             "albumType": "ep",
             "genre": "Punk",
             "artistName": "Sun Dried Flies",
-            "artistPath": "/post/?title=Sun Dried Flies&type=artist",
+            "artistPath": "../post/?title=Sun Dried Flies&type=artist",
             "highlight": "This is the highlight sentence",
-            "path": "/post/?title=Cliché&type=album",
+            "path": "../post/?title=Cliché&type=album",
             "date": "2026-03-26",
             "content": "This is the content of the entire article."
         },
         {
-            "src": "/img/album/rainy.jpeg",
+            "src": "../img/album/rainy.jpeg",
             "title": "Rainy",
             "category": "album",
             "albumType": "ep",
             "genre": "Punk",
             "artistName": "Taxi Girls",
-            "artistPath": "/post/?title=Taxi Girls&type=artist",
+            "artistPath": "../post/?title=Taxi Girls&type=artist",
             "highlight": "This is the highlight sentence",
-            "path": "/post/?title=Rainy&type=album",
+            "path": "../post/?title=Rainy&type=album",
             "date": "2026-03-26",
             "content": "This is the content of the entire article."
         }
@@ -118,35 +118,35 @@
     "venue":
     [
         {
-            "src": "/img/venue/targ.png",
+            "src": "../img/venue/targ.png",
             "title": "House of Targ",
             "category": "venue",
             "genre": "Alt, Metal, Punk, Rock",
             "locale": "1077 Bank Street, Ottawa",
             "highlight": "Basement venue with a consistent line up of local alt music.",
-            "path": "/post/?title=House of Targ&type=venue",
+            "path": "../post/?title=House of Targ&type=venue",
             "date": "2026-03-25",
             "content": "This is the content of the entire article."
         },
         {
-            "src": "/img/venue/rainbowbistro.png",
+            "src": "../img/venue/rainbowbistro.png",
             "title": "Rainbow Bistro",
             "category": "venue",
             "genre": "Alt, Indie, Rock",
             "locale": "76 Murray Street, Ottawa",
             "highlight": "Iconic Ottawa venue known for its intimate atmosphere and support of local artists.",
-            "path": "/post/?title=Rainbow Bistro&type=venue",
+            "path": "../post/?title=Rainbow Bistro&type=venue",
             "date": "2026-03-25",
             "content": "This is the content of the entire article."
         },
         {
-            "src": "/img/venue/liveonelgin.png",
+            "src": "../img/venue/liveonelgin.png",
             "title": "Live On Elgin",
             "category": "venue",
             "genre": "Alt, Folk, Indie",
             "locale": "220 Elgin Street, Ottawa",
             "highlight": "Vibrant downtown venue known for diverse lineups and a welcoming vibe.",
-            "path": "/post/?title=Live On Elgin&type=venue",
+            "path": "../post/?title=Live On Elgin&type=venue",
             "date": "2026-03-25",
             "content": "This is the content of the entire article."
         }
@@ -159,7 +159,7 @@
             "title": "Welcome to House of Targ: Ottawa’s Unique Venue",
             "category": "article",
             "highlight": "by Emily Britton",
-            "path": "/post/?title=Welcome to House of Targ: Ottawa’s Unique Venue&type=article",
+            "path": "../post/?title=Welcome to House of Targ: Ottawa’s Unique Venue&type=article",
             "date": "2026-03-18",
             "content": "This is the content of the entire article."
         }
