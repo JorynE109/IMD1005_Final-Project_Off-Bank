@@ -181,6 +181,9 @@ header{
 .logo{
     width: 80px;
 }
+.logo img{
+    max-width: 80px;
+}
 button, .btn{
     display: block;
     padding: 0.5rem;
