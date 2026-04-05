@@ -123,11 +123,15 @@ p {
 .eventBody img {
     max-width: 100%;
 }
+.artists {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 .artistInfo {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin: 40px 0px 40px 0px;
 }
 .artistName {
     font-size: 24px;
@@ -137,15 +141,26 @@ p {
     font-weight: bold;
 }
 .artistDesc {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: "elza-narrow", sans-serif;
     font-size: 16px;
+    line-height: 1.5rem;
 }
 .artistInfo a {
-    font-family: "elza-narrow", sans-serif;
+    font-family: "chainprinter", sans-serif;
     font-size: 16px;
 }
 .eventDispFull{
-    margin: 2rem 0;
+    margin-bottom: 2rem;
 }
+#eventsList {
+    margin: 2rem 0 2rem 0;
+}
+#eventsList .artists {
+    margin-top: 2rem;
+}
+
 .viewSelect:focus {
     background-color: var(--blue);
     border: 3px solid var(--black);
@@ -225,9 +240,12 @@ p {
   background-color: #555; 
   opacity: 75%;
 }
-.btn{
+.artistInfo .btn{
+    border-radius: 5px;
     margin-top: 1rem
 }
+
+
 .calDay.isCalendar .evTitle{
     display: none;
 }
@@ -241,12 +259,16 @@ p {
 .calendarDay p span{
     display: none;
 }
+
 @media screen and (min-width: 500px) {
     .calendarDay p span.cont{
         display: inline;
     }
 }
 @media screen and (min-width: 768px) {
+    main {
+        padding: 2.5rem;
+    }
     h1 {
         font-size: 80px;
         letter-spacing: 2px;
@@ -283,7 +305,7 @@ p {
         margin: 30px 40px;
     }
     .listview .dayEvent h3 {
-        margin: 40px 0px 20px 0px;
+        margin: 15px 0px 15px 0px;
     }
     .listview .dayEvent{
         margin: 20px 40px;
@@ -302,7 +324,6 @@ p {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        margin: 70px 0px 70px 0px;
     } 
     #myBtn {
         display: none;
@@ -327,11 +348,16 @@ p {
         max-width: 100%;
         max-height: 600px;
     }
+    #eventsList .artists {
+        margin-top: 0;
+    }
     .artists{
         overflow-y: auto;
         max-height: 100%;
         border: solid 3px var(--black);
-        padding: 1rem;
+        border-radius: 7px;
+        padding: 1.5rem;
+        gap: 2.5rem;
     }
     .eventBody .artists .artistInfo img {
         width: 100%;
