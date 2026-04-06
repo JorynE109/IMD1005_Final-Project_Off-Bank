@@ -323,6 +323,7 @@ footer #footerText{
         border-radius: 0 0 2rem 0;
         transform-origin: top left;
         transition: scale 200ms ease;
+        z-index: 99;
     }
     header:hover{
         padding: 1rem;
