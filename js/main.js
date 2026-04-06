@@ -3,12 +3,20 @@ const $recentPostsDisplay = document.getElementById('recentPostsDisplay');
 const $artistHighlight = document.getElementById('artistHighlightDisplay');
 let events;
 let posts;
+const header = document.querySelector('header');
+const headerImg = document.querySelector('.logoImg');
 
 window.addEventListener('load', (event) => {
     if($newsDisplay)
         loadEvents();
     if($recentPostsDisplay)
         loadPosts();
+    header.addEventListener('mouseover', (event)=>{
+        headerImg.src = '../img/logo-lg.png';
+    })
+    header.addEventListener('mouseout', (event)=>{
+        headerImg.src = '../img/logo.png';
+    })
 });
 async function loadEvents(){
     try{
