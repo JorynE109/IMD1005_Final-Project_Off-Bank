@@ -103,7 +103,7 @@ function updateArtistHighlight()
 
     $artistHighlight.innerHTML = `
     <div class="highlightedArtist">
-        <img class="artistImg" src="${posts['artist'][dailyArtist].src}">
+        <img class="artistImg" src="${posts['artist'][dailyArtist].src}" alt="profile image for ${posts['artist'][dailyArtist].title}" aria-hidden="true">
         <div class="artistInfoText">
             <p class="artistTitle">${posts['artist'][dailyArtist].title}</p>
             <p class="artistGenre">${posts['artist'][dailyArtist].genre}</p>

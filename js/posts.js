@@ -43,7 +43,7 @@ function updatePosts(){
     
     data[postType].forEach(article => {
         postsHolderHTML.push(`<div class="post">
-                                <img src="${article.src}">
+                                <img src="${article.src}" aria-hidden="true" alt="hero image for ${article.title}">
                                 <div class="infoText">
                                     <p class="img-label">${article.title}</p>
                                     <a href="#" class="category">${article.category}</a>
@@ -63,7 +63,7 @@ function updateAllPosts(){
         console.log(category);
         data[category].forEach(article=>{
             postsHolderHTML.push(`<div class="post">
-                                    <img src="${article.src}">
+                                    <img src="${article.src}" aria-hidden="true" alt="hero image for ${article.title}">
                                     <div class="infoText">
                                         <p class="img-label">${article.title}</p>
                                         <a href="#" class="category">${article.category}</a>
@@ -131,7 +131,7 @@ function searchItems(){
 
     dataFiltered.forEach(item => {
         if (item) postsHolderHTML.push(`<div class="post">
-                                            <img src="${item.src}">
+                                            <img src="${item.src}" aria-hidden="true" alt="hero image for ${item.title}">
                                             <div class="infoText">
                                                 <p class="img-label">${item.title}</p>
                                                 <a href="#" class="category">${item.category}</a>

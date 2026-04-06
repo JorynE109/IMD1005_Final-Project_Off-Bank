@@ -93,7 +93,7 @@ function updateArtistReview(posts){
             postHTML.push(`
             <h1>${p.title}</h1>
             <div class="imgDisp">    
-                <img src="${p.src}">
+                <img src="${p.src}" aria-hidden="true" alt="artist profile photo for ${p.title}">
             </div>
             <div class="infoText">
                 <p class="genre">${p.genre}</p>
@@ -173,7 +173,7 @@ function updateVenueReview(posts){
             postHTML.push(`
             <h1>${p.title}</h1>
             <div class="imgDisp">    
-                <img src="${p.src}">
+                <img src="${p.src}" aria-hidden="true" alt="profile photo for ${p.title}">
             </div>
             <div class="infoText">
                 <p class="genre">${p.genre}</p>
@@ -251,7 +251,7 @@ function updateAlbumReview(posts){
             postHTML.push(`
             <h1>${p.title}</h1>
             <div class="imgDisp">    
-                <img src="${p.src}">
+                <img src="${p.src}" aria-hidden="true" alt="album cover for ${p.title}">
             </div>
             <div class="infoText">
                 <p class="album-type">${p.albumType}</p>

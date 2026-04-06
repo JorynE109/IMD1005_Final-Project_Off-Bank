@@ -132,7 +132,7 @@ function getEventDetailsHTML(indexes){
                         <a class="link" href="${items[ev].link}">Get Tickets</a>
                     </div>
                     <div class="eventBody">
-                        <img src="${items[ev].poster}" alt="poster for ${items[ev].title}">
+                        <img src="${items[ev].poster}" alt="poster for ${items[ev].title}" aria-hidden="true">
                         <div class="artists">
                 `);
         if (items[ev].artistInfo)
@@ -141,7 +141,7 @@ function getEventDetailsHTML(indexes){
                 eventsHTML.push(`
                     <div class="artistInfo">
                         <h3 class="artistName">${artist.name}</h3>
-                        <img src="${artist.photo}" alt="profile image of ${artist.name}">
+                        <img src="${artist.photo}" alt="profile image of ${artist.name}" aria-hidden="true">
                         <div>
                             <p class="artistGenre">${artist.genre}</p>
                             <p class="artistDesc">${artist.desc}</p>

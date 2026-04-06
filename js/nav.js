@@ -12,13 +12,13 @@ if (page == "")
 }
 console.log(page);
 const pageIcons = {
-    "home": `<img class="navicon" src="../img/icon/home-48.png">`,
-    "posts": `<img class="navicon" src="../img/icon/article-48.png">`,
-    "events": `<img class="navicon" src="../img/icon/calendar-48.png">`,
-    "about": `<img class="navicon" src="../img/icon/smile-48.png">`,
-    "event": `<img class="navicon" src="../img/icon/smile-48.png">`
+    "home": `<img class="navicon" src="../img/icon/home-48.png" alt="home icon">`,
+    "posts": `<img class="navicon" src="../img/icon/article-48.png" alt="article icon">`,
+    "events": `<img class="navicon" src="../img/icon/calendar-48.png" alt="calendar icon">`,
+    "about": `<img class="navicon" src="../img/icon/smile-48.png" alt="smiley face icon">`,
+    "event": `<img class="navicon" src="../img/icon/smile-48.png" alt="smiley face icon">`
 }
-const hamburgerIcon = `<img class="navHamburger" src="../img/icon/hamburger-48.png">`
+const hamburgerIcon = `<img class="navHamburger" src="../img/icon/hamburger-48.png" alt="hamburger icon">`
 let $navHTML;
 
 if (pageIcons[page] == undefined)
