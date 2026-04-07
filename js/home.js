@@ -3,12 +3,20 @@ const $recentPostsDisplay = document.getElementById('recentPostsDisplay');
 const $artistHighlight = document.getElementById('artistHighlightDisplay');
 let events;
 let posts;
+const header = document.querySelector('header');
+const headerImg = document.querySelector('.logoImg');
 
 window.addEventListener('load', (event) => {
     if($newsDisplay)
         loadEvents();
     if($recentPostsDisplay)
         loadPosts();
+    header.addEventListener('mouseover', (event)=>{
+        headerImg.src = 'img/logo-lg.png';
+    })
+    header.addEventListener('mouseout', (event)=>{
+        headerImg.src = 'img/logo.png';
+    })
 });
 async function loadEvents(){
     try{
@@ -96,7 +104,7 @@ function updateArtistHighlight()
     artistSRC.shift();
     $artistHighlight.innerHTML = `
     <div class="highlightedArtist">
-        <img class="artistImg" src="${artistSRC.join('/')}">
+        <img class="artistImg" src="${artistSRC.join('/')}" alt="profile image for ${posts['artist'][dailyArtist].title}" aria-hidden="true">
         <div class="artistInfoText">
             <p class="artistTitle">${posts['artist'][dailyArtist].title}</p>
             <p class="artistGenre">${posts['artist'][dailyArtist].genre}</p>

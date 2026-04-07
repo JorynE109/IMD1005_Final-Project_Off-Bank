@@ -45,6 +45,9 @@ a.show:hover{
     color: var(--white);
     background-color: var(--red);
 }
+.loadingGIF{
+    max-width: 96px;
+}
 @media screen and (min-width: 900px){
     main{
         flex-direction: row;

@@ -12,12 +12,14 @@ window.addEventListener("load", (event) => {
         let searchRes = localStorage.getItem("searchResult");
         $postsHolder.innerHTML = searchRes;
     }
-    //updateDefaultButton();
-    updateActiveButton();
-    fetchItems();
+    else{
+        //updateDefaultButton();
+        updateActiveButton();
+        fetchItems(1);
+    }
 });
 
-async function fetchItems(){
+async function fetchItems(protocol){
     try{
         const res = await fetch('../posts/posts.json');
         data = await res.json();
@@ -26,8 +28,15 @@ async function fetchItems(){
     catch (error){
         $postsHolder.innerHTML = `<h2>Unable to load Posts</h2><p>We apologize for the inconvenience. Try again later.</p>`
     }
-    
-    determinePostsUpdate();
+    if (protocol == 1)
+    {
+        determinePostsUpdate();
+    }
+    if (protocol == 2)
+    {
+        searchItems();
+
+    }
 }
 function determinePostsUpdate(){
     if(postType == 'all'){
@@ -43,7 +52,7 @@ function updatePosts(){
     
     data[postType].forEach(article => {
         postsHolderHTML.push(`<div class="post">
-                                <img src="${article.src}">
+                                <img src="${article.src}" aria-hidden="true" alt="hero image for ${article.title}">
                                 <div class="infoText">
                                     <p class="img-label">${article.title}</p>
                                     <a href="#" class="category">${article.category}</a>
@@ -63,7 +72,7 @@ function updateAllPosts(){
         console.log(category);
         data[category].forEach(article=>{
             postsHolderHTML.push(`<div class="post">
-                                    <img src="${article.src}">
+                                    <img src="${article.src}" aria-hidden="true" alt="hero image for ${article.title}">
                                     <div class="infoText">
                                         <p class="img-label">${article.title}</p>
                                         <a href="#" class="category">${article.category}</a>
@@ -79,7 +88,7 @@ const articleSelectionButton = document.querySelectorAll('.categorySelection');
 
 function productSelected(category){
     postType = category;
-    fetchItems();
+    fetchItems(1);
     localStorage.setItem("postType", postType);
     //updateDefaultButton();
     //updateActiveButton();
@@ -100,12 +109,15 @@ function updateActiveButton(){
 //search functionality
 
 const searchBar = document.getElementById("search");
+let search;
 
-searchBar.addEventListener('submit', (event)=>{
-    searchItems();
+searchBar.addEventListener('input', (event)=>{
+    event.preventDefault();
+    search = searchBar.value;
+    console.log("Search saved as '"+ search +"' loading items");
+    fetchItems(2);
 })
 function searchItems(){
-    let search = searchBar.value;
     let dataFiltered = [];
     let postsHolderHTML = [];
 
@@ -113,16 +125,16 @@ function searchItems(){
         if (items[postType]){
             dataFiltered.push(items[postType].find(({title})=> title.toLowerCase() === search.toLowerCase()));
             items[postType].forEach(item=>{
-                if ((item.title.toLowerCase().search(search.toLowerCase())) >= 0){
+                if (item.title && (item.title.toLowerCase().search(search.toLowerCase())) >= 0){
                     dataFiltered.push(item);
                 }
-                else if ((item.category.toLowerCase().search(search.toLowerCase())) >= 0){
+                else if (item.category && (item.category.toLowerCase().search(search.toLowerCase())) >= 0){
                     dataFiltered.push(item);
                 }
-                else if ((item.highlight.toLowerCase().search(search.toLowerCase())) >= 0){
+                else if (item.highlight && (item.highlight.toLowerCase().search(search.toLowerCase())) >= 0){
                     dataFiltered.push(item);
                 }
-                else if ((item.content.toLowerCase().search(search.toLowerCase())) >= 0){
+                else if (item.content && (item.content.toLowerCase().search(search.toLowerCase())) >= 0){
                     dataFiltered.push(item);
                 }
             });
@@ -131,7 +143,7 @@ function searchItems(){
 
     dataFiltered.forEach(item => {
         if (item) postsHolderHTML.push(`<div class="post">
-                                            <img src="${item.src}">
+                                            <img src="${item.src}" aria-hidden="true" alt="hero image for ${item.title}">
                                             <div class="infoText">
                                                 <p class="img-label">${item.title}</p>
                                                 <a href="#" class="category">${item.category}</a>

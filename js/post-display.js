@@ -45,41 +45,37 @@ async function loadArticle(){
 }
 function updateArtistReview(posts){
     let dataFiltered = [];
-    upcomingShowsHTML = [];
+    reviewHTML = [];
     console.log($events)
     $events.forEach(ev=>
     {
         if(ev.artistInfo)
         {
-            console.log("Filtering " + ev)
             ev.artistInfo.forEach(artist=>{
                 if ((artist.name.toLowerCase().search(pTitle.toLowerCase())) >= 0){
                     dataFiltered.push(ev);
                 }
             });
         }
-        //add for other types
     });
-    upcomingShowsHTML.push(`
+    reviewHTML.push(`
             <h3>Shows featuring ${pTitle}</h3>
             <div class="artistShows">
             `);
-
-            console.log(`${dataFiltered}`);
     for (let i = 0; i < dataFiltered.length; i++)
     {
         console.log(dataFiltered[i].title);
-        if ((new Date(dataFiltered[i].date)) >= (new Date((new Date()).getFullYear(), (new Date()).getMonth(), (new Date()).getDate())) && upcomingShowsHTML.length <= 3)
+        if ((new Date(dataFiltered[i].date)) >= (new Date((new Date()).getFullYear(), (new Date()).getMonth(), (new Date()).getDate())) && reviewHTML.length <= 3)
         {
             console.log(dataFiltered[i].title);
-            upcomingShowsHTML.push(`
+            reviewHTML.push(`
             <a class="show" href="../event/?date=${dataFiltered[i].date}&title=${dataFiltered[i].title}">
                 <p class="showTitle">${dataFiltered[i].title}</p><p class="showDate">${dataFiltered[i].date}</p>
             </a>
             `)
         }
     }
-    upcomingShowsHTML.push(`
+    reviewHTML.push(`
             </div>
             `);
 
@@ -93,7 +89,7 @@ function updateArtistReview(posts){
             postHTML.push(`
             <h1>${p.title}</h1>
             <div class="imgDisp">    
-                <img src="${p.src}">
+                <img src="${p.src}" aria-hidden="true" alt="artist profile photo for ${p.title}">
             </div>
             <div class="infoText">
                 <p class="genre">${p.genre}</p>
@@ -115,19 +111,29 @@ function updateArtistReview(posts){
                 </div>
                 `)
             }
-            if (upcomingShowsHTML.length > 2)
+            if (reviewHTML.length > 2)
             {
-                postHTML.push(upcomingShowsHTML.join(""))
+                postHTML.push(reviewHTML.join(""))
             }
 
             
         }
     });
-    $articleDisp.innerHTML = postHTML.join("");
+    if (postHTML.length > 0)
+    {
+        $articleDisp.innerHTML = postHTML.join("");
+    }
+    else
+    {
+        $articleDisp.innerHTML = `
+        <h1>Unable to Load Article</h1>
+        <p>Please check again later.</p>
+        `
+    }
 }
 function updateVenueReview(posts){
     let dataFiltered = [];
-    upcomingShowsHTML = [];
+    reviewHTML = [];
     console.log($events)
     $events.forEach(ev=>
     {
@@ -140,7 +146,7 @@ function updateVenueReview(posts){
         }
         //add for other types
     });
-    upcomingShowsHTML.push(`
+    reviewHTML.push(`
             <h3>Shows at ${pTitle}</h3>
             <div class="artistShows">
             `);
@@ -149,17 +155,17 @@ function updateVenueReview(posts){
     for (let i = 0; i < dataFiltered.length; i++)
     {
         console.log(dataFiltered[i].title);
-        if ((new Date(dataFiltered[i].date)) >= (new Date((new Date()).getFullYear(), (new Date()).getMonth(), (new Date()).getDate())) && upcomingShowsHTML.length <= 3)
+        if ((new Date(dataFiltered[i].date)) >= (new Date((new Date()).getFullYear(), (new Date()).getMonth(), (new Date()).getDate())) && reviewHTML.length <= 3)
         {
             console.log(dataFiltered[i].title);
-            upcomingShowsHTML.push(`
+            reviewHTML.push(`
             <a class="show" href="../event/?date=${dataFiltered[i].date}&title=${dataFiltered[i].title}">
                 <p class="showTitle">${dataFiltered[i].title}</p><p class="showDate">${dataFiltered[i].date}</p>
             </a>
             `)
         }
     }
-    upcomingShowsHTML.push(`
+    reviewHTML.push(`
             </div>
             `);
 
@@ -173,7 +179,7 @@ function updateVenueReview(posts){
             postHTML.push(`
             <h1>${p.title}</h1>
             <div class="imgDisp">    
-                <img src="${p.src}">
+                <img src="${p.src}" aria-hidden="true" alt="profile photo for ${p.title}">
             </div>
             <div class="infoText">
                 <p class="genre">${p.genre}</p>
@@ -195,17 +201,27 @@ function updateVenueReview(posts){
                 </div>
                 `)
             }
-            if (upcomingShowsHTML.length > 2)
+            if (reviewHTML.length > 2)
             {
-                postHTML.push(upcomingShowsHTML.join(""))
+                postHTML.push(reviewHTML.join(""))
             }
         }
     });
-    $articleDisp.innerHTML = postHTML.join("");
+    if (postHTML.length > 0)
+    {
+        $articleDisp.innerHTML = postHTML.join("");
+    }
+    else
+    {
+        $articleDisp.innerHTML = `
+        <h1>Unable to Load Article</h1>
+        <p>Please check again later.</p>
+        `
+    }
 }
 function updateAlbumReview(posts){
     let dataFiltered = [];
-    upcomingShowsHTML = [];
+    reviewHTML = [];
     $events.forEach(ev=>
     {
         if(ev.artistInfo)
@@ -218,7 +234,7 @@ function updateAlbumReview(posts){
         }
         //add for other types
     });
-    upcomingShowsHTML.push(`
+    reviewHTML.push(`
             <h3>Shows featuring ${posts[pType][0].artistName}</h3>
             <div class="artistShows">
             `);
@@ -227,17 +243,17 @@ function updateAlbumReview(posts){
     for (let i = 0; i < dataFiltered.length; i++)
     {
         console.log(dataFiltered[i].title);
-        if ((new Date(dataFiltered[i].date)) >= (new Date((new Date()).getFullYear(), (new Date()).getMonth(), (new Date()).getDate())) && upcomingShowsHTML.length <= 3)
+        if ((new Date(dataFiltered[i].date)) >= (new Date((new Date()).getFullYear(), (new Date()).getMonth(), (new Date()).getDate())) && reviewHTML.length <= 3)
         {
             console.log(dataFiltered[i].title);
-            upcomingShowsHTML.push(`
+            reviewHTML.push(`
             <a class="show" href="../event/?date=${dataFiltered[i].date}&title=${dataFiltered[i].title}">
                 <p class="showTitle">${dataFiltered[i].title}</p><p class="showDate">${dataFiltered[i].date}</p>
             </a>
             `)
         }
     }
-    upcomingShowsHTML.push(`
+    reviewHTML.push(`
             </div>
             `);
 
@@ -251,7 +267,7 @@ function updateAlbumReview(posts){
             postHTML.push(`
             <h1>${p.title}</h1>
             <div class="imgDisp">    
-                <img src="${p.src}">
+                <img src="${p.src}" aria-hidden="true" alt="album cover for ${p.title}">
             </div>
             <div class="infoText">
                 <p class="album-type">${p.albumType}</p>
@@ -280,12 +296,21 @@ function updateAlbumReview(posts){
                 </div>
                 `)
             }
-            if (upcomingShowsHTML.length > 2)
+            if (reviewHTML.length > 2)
             {
-                postHTML.push(upcomingShowsHTML.join(""))
+                postHTML.push(reviewHTML.join(""))
             }
         }
     });
-    $articleDisp.innerHTML = postHTML.join("");
+    if (postHTML.length > 0)
+    {
+        $articleDisp.innerHTML = postHTML.join("");
+    }
+    else
+    {
+        $articleDisp.innerHTML = `
+        <h1>Unable to Load Article</h1>
+        <p>Please check again later.</p>
+        `
+    }
 }
-

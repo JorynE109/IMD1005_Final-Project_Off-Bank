@@ -186,7 +186,7 @@
     },
     {
         "date": "04-07-2026",
-        "title": "The Meteors, Gunsmoke and Slo' Tom & The Handsome Devils @ Targ",
+        "title": "The Meteors, Gunsmoke and Slo' Tom and The Handsome Devils @ Targ",
         "venue": "House of Targ",
         "price": 25,
         "url": "https://www.houseoftarg.com/concert-listings-events/the-meteors-uk-psychobilly-gunsmoke-slo-tom-the-handsome-devils",
@@ -209,12 +209,12 @@
                 "path": "../post/?title=Gunsmoke&type=artist"
             },
             {
-                "name": "Slo' Tom & The Handsome Devils",
+                "name": "Slo' Tom and The Handsome Devils",
                 "genre": "Hardcore Country",
                 "photo": "../img/artist/slo-tom.jpg",
                 "url": "https://www.instagram.com/slotom_and_the_handsome_devils/",
                 "desc": "If you like Hank I, Hank III & Social D you’ll get along famously with 613 legend SLO’ TOM & his band THE HANDSOME DEVILS. Prepare to be thoroughly entertained.",
-                "path": "../post/?title=Slo' Tom & The Handsome Devils&type=artist"
+                "path": "../post/?title=Slo' Tom and The Handsome Devils&type=artist"
             }
         ]
     },
