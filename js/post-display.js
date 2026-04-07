@@ -288,3 +288,4 @@ function updateAlbumReview(posts){
     });
     $articleDisp.innerHTML = postHTML.join("");
 }
+
