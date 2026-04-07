@@ -67,10 +67,16 @@ h2 {
     height: 20vh;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    background-size: cover;
     object-position: center;
     border-radius: 50%;
 }
-.favArtistTxt {
+.favArtist {
+    font-family: "chainprinter", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.favGenre {
     font-family: "chainprinter", sans-serif;
     font-size: 1rem;
     font-weight: bold;
@@ -175,7 +181,10 @@ input:active, input:focus {
     .blueHairPronouns {
         font-size: 15px;
     }
-    .ab-div .favArtistTxt {
+    .ab-div .favArtist {
+        text-align: left;
+    }
+    .ab-div .favGenre {
         text-align: left;
     }
     
