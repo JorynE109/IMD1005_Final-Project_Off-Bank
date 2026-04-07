@@ -181,8 +181,8 @@ function updateVenueReview(posts){
     let postHTML = [];
     posts[pType].forEach(p => {
         console.log(`comparing ${p.title} vs ${pTitle}`)
-        console.log(`comparing ${p.category} vs ${pType}`)
-        if(p.title == pTitle && p.category == pType)
+        console.log(`comparing ${p.category.toLowerCase()} vs ${pType}`)
+        if(p.title == pTitle && p.category.toLowerCase() == pType)
         {
             postHTML.push(`
             <h1>${p.title}</h1>
@@ -230,20 +230,28 @@ function updateVenueReview(posts){
 function updateAlbumReview(posts){
     let dataFiltered = [];
     reviewHTML = [];
+    let $artistName;
     $events.forEach(ev=>
     {
         if(ev.artistInfo)
         {
             ev.artistInfo.forEach(artist=>{
-                if ((artist.name.toLowerCase().search(posts[pType][0].artistName.toLowerCase())) >= 0){
+                posts[pType].forEach(post=>{
+                    if(post.title == pTitle)
+                    {
+                        $artistName = post.artistName;
+                    }
+                    console.log($artistName);
+                })
+                if ((artist.name.toLowerCase().search($artistName.toLowerCase())) >= 0){
                     dataFiltered.push(ev);
                 }
             });
         }
-        //add for other types
     });
+    console.log(dataFiltered);
     reviewHTML.push(`
-            <h3>Shows featuring ${posts[pType][0].artistName}</h3>
+            <h3>Shows featuring ${$artistName}</h3>
             <div class="artistShows">
             `);
 
@@ -269,8 +277,8 @@ function updateAlbumReview(posts){
     let postHTML = [];
     posts[pType].forEach(p => {
         console.log(`comparing ${p.title} vs ${pTitle}`)
-        console.log(`comparing ${p.category} vs ${pType}`)
-        if(p.title == pTitle && p.category == pType)
+        console.log(`comparing ${p.category.toLowerCase()} vs ${pType}`)
+        if(p.title == pTitle && p.category.toLowerCase() == pType)
         {
             postHTML.push(`
             <h1>${p.title}</h1>
