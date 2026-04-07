@@ -24,7 +24,7 @@ main {
     background-color: var(--white);
 }
 .ab-div p {
-    line-height: 1.5rem;
+    line-height: 2rem;
     text-align: justify;
 }
 
@@ -45,6 +45,9 @@ h2 {
     border: 4px solid var(--black);
     border-radius: 15px;
     background-color: rgb(from var(--blue) r g b / 0.5);
+}
+.bio p {
+    line-height: 1.5rem;
 }
 .imgHolder {
     display: flex;
