@@ -10,7 +10,7 @@
             "url": "https://linktr.ee/taxigirlsmontreal",
             "path": "../post/?title=Taxi Girls&type=artist",
             "date": "2026-03-27",
-            "category": "artist",
+            "category": "Artist",
             "highlight": "This is a description of taxi girls!"
         },
         {
@@ -21,7 +21,7 @@
             "url": "https://sundriedflies.ca/home",
             "path": "../post/?title=Sun Dried Flies&type=artist",
             "date": "2026-03-27",
-            "category": "artist",
+            "category": "Artist",
             "highlight": "This is a description of Sun Dried Flies!"
         },
         {
@@ -32,14 +32,14 @@
             "url": "",
             "path": "../post/?title=Passenger Princess&type=artist",
             "date": "2026-03-27",
-            "category": "artist",
+            "category": "Artist",
             "highlight": "This is a description of PP!"
         },
         {
             "title": "HotSkins",
             "genre": "Alt Rock",
             "locale": "Ottawa",
-            "category": "artist",
+            "category": "Artist",
             "date": "2026-03-28",
             "src": "../img/artist/HotSkins.jpg",
             "url": "https://www.instagram.com/hotskinsofficial/",
@@ -51,7 +51,7 @@
             "title": "It Shines",
             "genre": "Folk Punk",
             "locale": "Ottawa",
-            "category": "artist",
+            "category": "Artist",
             "date": "2026-03-28",
             "src": "../img/artist/it-shines.png",
             "url": "https://www.instagram.com/itshines_sucks/",
@@ -63,7 +63,7 @@
             "title": "Candy Says",
             "genre": "Punk",
             "locale": "Ottawa",
-            "category": "artist",
+            "category": "Artist",
             "date": "2026-03-28",
             "src": "../img/artist/candy-says.jpg",
             "url": "https://www.instagram.com/candysaysband/",
@@ -77,7 +77,7 @@
         {
             "src": "../img/album/this-is-our-free-bird.png",
             "title": "This is our Free Bird",
-            "category": "album",
+            "category": "Album",
             "albumType": "ep",
             "genre": "Punk",
             "artistName": "Passenger Princess",
@@ -90,7 +90,7 @@
         { 
             "src": "../img/album/cliche.jpeg",
             "title": "Cliché",
-            "category": "album",
+            "category": "Album",
             "albumType": "ep",
             "genre": "Punk",
             "artistName": "Sun Dried Flies",
@@ -103,7 +103,7 @@
         {
             "src": "../img/album/rainy.jpeg",
             "title": "Rainy",
-            "category": "album",
+            "category": "Album",
             "albumType": "ep",
             "genre": "Punk",
             "artistName": "Taxi Girls",
@@ -120,7 +120,7 @@
         {
             "src": "../img/venue/targ.png",
             "title": "House of Targ",
-            "category": "venue",
+            "category": "Venue",
             "genre": "Alt, Metal, Punk, Rock",
             "locale": "1077 Bank Street, Ottawa",
             "highlight": "Basement venue with a consistent line up of local alt music.",
@@ -131,7 +131,7 @@
         {
             "src": "../img/venue/rainbowbistro.png",
             "title": "Rainbow Bistro",
-            "category": "venue",
+            "category": "Venue",
             "genre": "Alt, Indie, Rock",
             "locale": "76 Murray Street, Ottawa",
             "highlight": "Iconic Ottawa venue known for its intimate atmosphere and support of local artists.",
@@ -142,7 +142,7 @@
         {
             "src": "../img/venue/liveonelgin.png",
             "title": "Live On Elgin",
-            "category": "venue",
+            "category": "Venue",
             "genre": "Alt, Folk, Indie",
             "locale": "220 Elgin Street, Ottawa",
             "highlight": "Vibrant downtown venue known for diverse lineups and a welcoming vibe.",
@@ -157,7 +157,7 @@
         {
             "url": "https://www.ottawashowbox.com/2020/02/18/welcome-to-house-of-targ-ottawas-unique-venue/",
             "title": "Welcome to House of Targ: Ottawa’s Unique Venue",
-            "category": "article",
+            "category": "Article",
             "highlight": "by Emily Britton",
             "path": "../post/?title=Welcome to House of Targ: Ottawa’s Unique Venue&type=article",
             "date": "2026-03-18",

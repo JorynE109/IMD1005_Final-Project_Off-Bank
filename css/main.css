@@ -60,6 +60,9 @@ sub{
     font-family: "chainprinter", sans-serif;
     font-size: 16px;
 }
+a {
+    font-family: "elza-narrow", sans-serif;
+}
 /* 
 MOBILE NAV FUNCTION
 */
@@ -187,6 +190,7 @@ button, .btn{
     text-decoration: none;
     color: var(--white);
     background-color: var(--red);
+    font-family: "elza-narrow", sans-serif;
     font-size: 1.3rem;
     width: fit-content;
     margin: auto;
