@@ -43,6 +43,27 @@ main{
     margin-top: auto;
 }
 
+.infoText {
+    line-height: 1.75rem;
+}
+.infoText .img-label {
+    font-weight: bold;
+}
+
+.btn.read-more {
+    font-family: "chainprinter", sans-serif;
+    padding: 0.3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: rgb(from var(--blue) r g b / 0.5);
+    color: var(--black);
+    border: 3px solid var(--black);
+    border-radius: 5px;
+}
+.btn.read-more:hover {
+    transform: scale(1.1);
+}
+
 #myBtn {
   position: fixed;
   bottom: 2rem;
