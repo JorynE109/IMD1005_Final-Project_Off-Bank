@@ -63,8 +63,8 @@ h2 {
     font-weight: bold;
     color: var(--red);
 }
-.bioImg {
-    height: 20vh;
+.imgHolder picture img{
+    max-width: 20vh;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     background-size: cover;
