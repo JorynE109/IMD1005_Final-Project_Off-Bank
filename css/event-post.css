@@ -89,6 +89,9 @@ h1, h2, h3, h4{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+.loadingGIF{
+    max-width: 96px;
+}
 @media screen and (min-width:1000px){
     h1{
         text-align: left;

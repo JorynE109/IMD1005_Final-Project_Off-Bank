@@ -90,24 +90,6 @@ function daysInMonth(month, year) {
     return new Date(year, month, 0).getDate();
 }
 
-// function getEvents(day, month, year){
-//     eventsHTML = []
-//     items.forEach((event)=>{
-//         let evDate = new Date(event.date);
-//         //console.log(evDate);
-//         let checkDate = new Date(year, month, day);
-//         //console.log(checkDate);
-//         if(evDate.getFullYear() == checkDate.getFullYear() && evDate.getMonth() == checkDate.getMonth() && evDate.getDate() == checkDate.getDate())
-//         {
-//             eventsHTML.push(`<div class="eventDispSm">
-//                                 <p class="evTitle">${event.title}</p>
-//                             </div>`);
-//         }
-//     })
-//     //console.log(eventsHTML);
-//     return eventsHTML.join("");
-// }
-
 function getEventsIdx(sDay, sMonth, sYear){
     let eventsIdx = [];
     //console.log(`checking ${sYear}-${sMonth}-${sDay}`);
@@ -150,7 +132,7 @@ function getEventDetailsHTML(indexes){
                         <a class="link" href="${items[ev].link}">Get Tickets</a>
                     </div>
                     <div class="eventBody">
-                        <img src="${items[ev].poster}">
+                        <img src="${items[ev].poster}" alt="poster for ${items[ev].title}" aria-hidden="true">
                         <div class="artists">
                 `);
         if (items[ev].artistInfo)
@@ -159,7 +141,7 @@ function getEventDetailsHTML(indexes){
                 eventsHTML.push(`
                     <div class="artistInfo">
                         <h3 class="artistName">${artist.name}</h3>
-                        <img src="${artist.photo}">
+                        <img src="${artist.photo}" alt="profile image of ${artist.name}" aria-hidden="true">
                         <div>
                             <p class="artistGenre">${artist.genre}</p>
                             <p class="artistDesc">${artist.desc}</p>
