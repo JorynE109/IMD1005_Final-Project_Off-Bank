@@ -3,8 +3,9 @@ const $articleDisp = document.getElementById('articleDisplay');
 let params = new URL(document.location.toString()).searchParams;
 console.log(params);
 let pTitle = params.get("title");
-let pType = params.get("type");
+let pType = params.get("type").toLowerCase();
 console.log(pTitle);
+console.log(pType);
 
 let $events = [];
 
@@ -83,8 +84,8 @@ function updateArtistReview(posts){
     let postHTML = [];
     posts[pType].forEach(p => {
         console.log(`comparing ${p.title} vs ${pTitle}`)
-        console.log(`comparing ${p.category} vs ${pType}`)
-        if(p.title == pTitle && p.category == pType)
+        console.log(`comparing ${p.category.toLowerCase()} vs ${pType}`)
+        if(p.title == pTitle && p.category.toLowerCase() == pType)
         {
             postHTML.push(`
             <h1>${p.title}</h1>
@@ -115,8 +116,15 @@ function updateArtistReview(posts){
             {
                 postHTML.push(reviewHTML.join(""))
             }
-
-            
+            else
+            {
+                postHTML.push(`
+                    <h3>Shows featuring ${pTitle}</h3>
+                        <div class="artistShows">
+                        <p>No upcoming shows. Check back later. </p>
+                        </div>
+                    `)
+            }
         }
     });
     if (postHTML.length > 0)
