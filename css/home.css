@@ -16,11 +16,12 @@ main img{
 }
 
 main {
-  margin: 0 auto;     
+  max-width: 1000px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-
 #recentPostsDisplay{
     width: fit-content;
 }
@@ -133,9 +134,17 @@ h2::after {
 .view-all:hover {
   opacity: 1;
 }
-@media screen and (min-width: 768px) {
-  main{
-    margin: 2rem 2rem 2rem 8rem;
-    width: calc(100% - 12rem);
+@media screen and (min-width: 780px) {
+  main {
+    margin: 2rem auto;
+    padding-left: 3rem;
+    max-width: 1000px;
   }
 }
+
+.section-box {
+  background-color: #8F95D3;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+
