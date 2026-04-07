@@ -42,7 +42,9 @@ main{
     margin: 0 auto;
     margin-top: auto;
 }
-
+a.category{
+    display: none;
+}
 .infoText {
     line-height: 1.75rem;
 }

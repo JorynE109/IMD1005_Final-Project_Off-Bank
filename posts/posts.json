@@ -11,7 +11,7 @@
             "path": "../post/?title=Taxi Girls&type=artist",
             "date": "2026-03-27",
             "category": "Artist",
-            "highlight": "This is a description of taxi girls!"
+            "highlight": "HIGH OCTANE - FIERCE - SWEATY - LOUD."
         },
         {
             "title": "Sun Dried Flies",
@@ -22,7 +22,7 @@
             "path": "../post/?title=Sun Dried Flies&type=artist",
             "date": "2026-03-27",
             "category": "Artist",
-            "highlight": "This is a description of Sun Dried Flies!"
+            "highlight": "Formed in 2021 in Prescott, Ontario, Sun Dried Flies channel the spirit of ’90s alternative rock while fearlessly diving into every genre under the sun—classic rock, grunge, blues, country, funk, pop, and more. They play everything you want… and more."
         },
         {
             "title": "Passenger Princess",
@@ -82,7 +82,7 @@
             "genre": "Punk",
             "artistName": "Passenger Princess",
             "artistPath": "../post/?title=Passenger Princess&type=artist",
-            "highlight": "This is the highlight sentence",
+            "highlight": "Passenger Princess' newest album!",
             "path": "../post/?title=This is our Free Bird&type=album",
             "date": "2026-03-26",
             "content": "This is the content of the entire article."
@@ -95,7 +95,7 @@
             "genre": "Punk",
             "artistName": "Sun Dried Flies",
             "artistPath": "../post/?title=Sun Dried Flies&type=artist",
-            "highlight": "This is the highlight sentence",
+            "highlight": "Sun Dried Flies' latest EP",
             "path": "../post/?title=Cliché&type=album",
             "date": "2026-03-26",
             "content": "This is the content of the entire article."
@@ -154,14 +154,5 @@
     ],
     "article":
     [
-        {
-            "url": "https://www.ottawashowbox.com/2020/02/18/welcome-to-house-of-targ-ottawas-unique-venue/",
-            "title": "Welcome to House of Targ: Ottawa’s Unique Venue",
-            "category": "Article",
-            "highlight": "by Emily Britton",
-            "path": "../post/?title=Welcome to House of Targ: Ottawa’s Unique Venue&type=article",
-            "date": "2026-03-18",
-            "content": "This is the content of the entire article."
-        }
     ]
 }
