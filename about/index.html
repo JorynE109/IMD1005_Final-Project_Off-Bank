@@ -61,13 +61,21 @@ background-repeat: repeat;
                 <div class="bioSection">
                     <div class="bio">
                         <div class="imgHolder">
-                            <img class="bioImg" src="../img/about/joryn.jpg">
+                            <picture>
+                                <img
+                                sizes="(max-width: 500px) 100vw, 500px"
+                                srcset="
+                                ../img/about/joryn-200.jpg 200w,
+                                ../img/about/joryn-500.jpg 500w"
+                                src="../img/about/joryn-500.jpg"
+                                alt="portrait of Joryn">
+                            </picture> 
                             <div>
                                 <p class="name">Joryn</p>
                                 <p class="blueHairPronouns">They/Them</p>
                             </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        <p class="bioDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna 
                         aliqua.</p>
                         <div class="favourites">
@@ -76,25 +84,41 @@ background-repeat: repeat;
                         </div>
                     </div>
                     <div class="bio">
-                        <div class="imgHolder">
-                            <img class="bioImg" src="/img/about/carolina.jpg">
+                        <div class="imgHolder"> 
+                            <picture>
+                                <img
+                                sizes="(max-width: 500px) 100vw, 500px"
+                                srcset="
+                                    ../img/about/carolina-200.jpg 200w,
+                                    ../img/about/carolina-500.jpg 500w"
+                                src="../img/about/carolina-500.jpg"
+                                alt="portrait of Carolina">
+                            </picture> 
                             <div>
                                 <p class="name">Carolina</p>
                                 <p class="blueHairPronouns">They/She</p>
                             </div>
                         </div>
-                        <p>Hello! I’m a student at Carleton University, 
+                        <p class="bioDesc">Hello! I’m a student at Carleton University, 
                         and have lived practically my entire life in Ottawa. 
                         I love going out, live music, and getting beat up on 
                         weekends moshing with grown men twice my size.</p> 
                         <div class="favourites">
-                            <p class="favArtist">Favourite Local Artist: Candy Says</p>
+                            <p class="favArtist">Favourite Local Artist:<br> Candy Says</p>
                             <p class="favGenre">Genre I love: Punk</p>
                         </div>
                     </div>
                      <div class="bio">
                         <div class="imgHolder">
-                            <img class="bioImg" src="../img/artist/bajohnston.jpeg">
+                            <picture>
+                                <img
+                                sizes="(max-width: 500px) 100vw, 500px"
+                                srcset="
+                                    ../img/about/bajohnston-200.jpeg 200w,
+                                    ../img/about/bajohnston-500.jpeg 500w"
+                                src="../img/about/bajohnston-500.jpeg"
+                                alt="portrait of Lina">
+                            </picture> 
                             <div>
                                 <p class="name">Lina</p>
                                 <p class="blueHairPronouns">She/Her</p>
