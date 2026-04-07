@@ -61,7 +61,15 @@ background-repeat: repeat;
                 <div class="bioSection">
                     <div class="bio">
                         <div class="imgHolder">
-                            <img class="bioImg" src="../img/about/joryn.jpg">
+                            <picture>
+                                <img
+                                sizes="(max-width: 500px) 100vw, 500px"
+                                srcset="
+                                ../img/about/joryn_nzgjgx_c_scale,w_200.jpg 200w,
+                                ../img/about/joryn_nzgjgx_c_scale,w_500.jpg 500w"
+                                src="../img/about/joryn_nzgjgx_c_scale,w_500.jpg"
+                                alt="portrait of Joryn">
+                            </picture> 
                             <div>
                                 <p class="name">Joryn</p>
                                 <p class="blueHairPronouns">They/Them</p>
@@ -76,8 +84,17 @@ background-repeat: repeat;
                         </div>
                     </div>
                     <div class="bio">
-                        <div class="imgHolder">
-                            <img class="bioImg" src="/img/about/carolina.jpg">
+                        <div class="imgHolder"> 
+                            <picture>
+                                <img
+                                sizes="(max-width: 500px) 100vw, 500px"
+                                srcset="
+                                    ../img/about/carolina_gp1jqe_c_scale,w_200.jpg 200w,
+                                    ../img/about/carolina_gp1jqe_c_scale,w_433.jpg 433w,
+                                    ../img/about/carolina_gp1jqe_c_scale,w_500.jpg 500w"
+                                src="../img/about/carolina_gp1jqe_c_scale,w_500.jpg"
+                                alt="portrait of Carolina">
+                            </picture> 
                             <div>
                                 <p class="name">Carolina</p>
                                 <p class="blueHairPronouns">They/She</p>
