@@ -77,12 +77,10 @@ h2 {
 .bioDesc {
     font-size: 16px;
 }
-.favArtist {
-    font-family: "chainprinter", sans-serif;
-    font-size: 0.75rem;
-    font-weight: bold;
+.favourites {
+    margin-top: auto;
 }
-.favGenre {
+.favourites p {
     font-family: "chainprinter", sans-serif;
     font-size: 0.75rem;
     font-weight: bold;
