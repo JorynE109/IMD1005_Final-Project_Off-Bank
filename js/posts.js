@@ -51,12 +51,19 @@ function updatePosts(){
     let postsHolderHTML = [];
     
     data[postType].forEach(article => {
+        let articleHighlightMin = article.highlight.split("");
+        if (articleHighlightMin.length > 40)
+        {
+            articleHighlightMin = articleHighlightMin.slice(0,40);
+            articleHighlightMin.push("...")
+        }
+        articleHighlightMin = articleHighlightMin.join("");
         postsHolderHTML.push(`<div class="post">
                                 <img src="${article.src}" aria-hidden="true" alt="hero image for ${article.title}">
                                 <div class="infoText">
                                     <p class="img-label">${article.title}</p>
                                     <a href="#" class="category">${article.category}</a>
-                                    <p class="highlight">${article.highlight}</p>
+                                    <p class="highlight">${articleHighlightMin}</p>
                                 </div>
                                 <a class="btn read-more" href="${article.path}">Read More</a>
                             </div>`);
@@ -71,12 +78,20 @@ function updateAllPosts(){
     allpostTypes.forEach(category=>{
         console.log(category);
         data[category].forEach(article=>{
+            let articleHighlightMin = article.highlight.split("");
+            if (articleHighlightMin.length > 40)
+            {
+                articleHighlightMin = articleHighlightMin.slice(0,40);
+                articleHighlightMin.push("...")
+            }
+            articleHighlightMin = articleHighlightMin.join("");
+            console.log(articleHighlightMin);
             postsHolderHTML.push(`<div class="post">
                                     <img src="${article.src}" aria-hidden="true" alt="hero image for ${article.title}">
                                     <div class="infoText">
                                         <p class="img-label">${article.title}</p>
                                         <a href="#" class="category">${article.category}</a>
-                                        <p class="highlight">${article.highlight}</p>
+                                        <p class="highlight">${articleHighlightMin}</p>
                                     </div>
                                     <a class="btn read-more" href="${article.path}">Read More</a>
                                 </div>`);
