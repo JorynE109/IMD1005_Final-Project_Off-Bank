@@ -1,13 +1,20 @@
 main{
     flex-direction: column;
     gap: 2rem;
+    background-color: none;
+    background-image: url('http://dl4.glitter-graphics.net/pub/2576/2576314iykc4qrchh.jpg');
+    background-attachment: fixed;
+    background-repeat: repeat;
 }
 .articleContent{
     border: 8px double var(--black);
-    padding: 1rem;
+    border-radius: 15px;
+    padding: 2rem;
+    background-color: var(--white);
 }
 h1{
     text-align: center;
+    margin-bottom: 2rem;
 }
 .articleContent .imgDisp{
     width: 100%;
@@ -26,12 +33,27 @@ h1{
     width: 100%;
     justify-content: space-between;
 }
+.infoText p {
+    font-family: "chainprinter", sans-serif;
+}
+
 .unreviewed{
     margin: 1rem;
     padding: 1rem;
     background-color: var(--red);
     color: var(--white);
 }
+.articleContent h3 {
+    margin: 2rem 0 0.5rem 0;
+}
+.artistShows {
+    margin: 1rem 0 1rem 0;
+}
+
+.artistLink.btn {
+    border-radius: 5px;
+}
+
 a.show{
     color: var(--red);
     text-decoration: none;
