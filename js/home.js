@@ -80,9 +80,11 @@ function updatePostsDisplay()
 
     for (let i = 0; i < 3; i++)
     {
+        let homePath = sorted[i].path;
+        homePath = homePath.split("../").join("");
         postsDispHTML.push(`
             <div class="post">
-                <a href="${sorted[i].path}">
+                <a href="${homePath}">
                     <p class="postTitle">${sorted[i].title}</p>
                     <p class="postDate">${sorted[i].date}</p>
                 </a>
@@ -98,10 +100,10 @@ function updateArtistHighlight()
     posts['artist'].forEach(artist => {
         allArtists.push(artist);
     });
-    
     const dailyArtist = (new Date().getDate() % allArtists.length);
     const artistSRC = posts['artist'][dailyArtist].src.split('/');
     artistSRC.shift();
+    let artistHomePath = posts['artist'][dailyArtist].path.split("../").join("");
     $artistHighlight.innerHTML = `
     <div class="highlightedArtist">
         <img class="artistImg" src="${artistSRC.join('/')}" alt="profile image for ${posts['artist'][dailyArtist].title}" aria-hidden="true">
@@ -109,7 +111,7 @@ function updateArtistHighlight()
             <p class="artistTitle">${posts['artist'][dailyArtist].title}</p>
             <p class="artistGenre">${posts['artist'][dailyArtist].genre}</p>
             <p class="artistDesc">${posts['artist'][dailyArtist].highlight}</p>
-            <a class="artistLink btn" href="${posts['artist'][dailyArtist].path}">Read More</a>
+            <a class="artistLink btn" href="${artistHomePath}">Read More</a>
         </div>
     </div>
     `
