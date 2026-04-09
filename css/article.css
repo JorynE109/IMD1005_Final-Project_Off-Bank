@@ -1,10 +1,16 @@
 main{
     flex-direction: column;
     gap: 2rem;
+}
+
+#wrapper {
     background-color: none;
     background-image: url('http://dl4.glitter-graphics.net/pub/2576/2576314iykc4qrchh.jpg');
     background-attachment: fixed;
     background-repeat: repeat;
+}
+main{
+    background-color: #ffffff00;
 }
 .articleContent{
     border: 8px double var(--black);
