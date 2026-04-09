@@ -17,6 +17,7 @@ In addition to these main pages, any link to an artist, venue, album or event wi
 1. Home -> Artist highlight
 2. User checks out upcoming shows linked on artist page, sees one they are interested in -> event page
 3. User looks at all the artists featured in the upcoming show, and wants to learn more -> artist page
+
 This navigation allows a user to follow paths for a long time before having to return to any main site pages.
 
 Joryn: js and html structure for all pages
