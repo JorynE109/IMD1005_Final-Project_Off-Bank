@@ -25,10 +25,15 @@ async function loadUpcomingEvents(){
     loadArticle();
 }
 async function loadArticle(){
-    const res = await fetch('../posts/posts.json');
-    const data = await res.json();
     let posts;
-    if(res.ok) posts = data;
+    try{
+        const res = await fetch('../posts/posts.json');
+        const data = await res.json();
+        if(res.ok) posts = data;
+    }
+    catch(error){
+        $articleDisp.innerHTML =  `<h2>Unable to load</h2><p>We apologize for the inconvenience. Try again later.</p>`
+    }
     
     
     if(pType == 'artist')
@@ -44,10 +49,10 @@ async function loadArticle(){
         updateAlbumReview(posts);
     }
 }
-function updateArtistReview(posts){
+function getEventsFromArtist()
+{
     let dataFiltered = [];
     reviewHTML = [];
-    console.log($events)
     $events.forEach(ev=>
     {
         if(ev.artistInfo)
@@ -79,8 +84,40 @@ function updateArtistReview(posts){
     reviewHTML.push(`
             </div>
             `);
-
-    console.log("updating posts");
+    return reviewHTML;
+}
+function getAlbumsFromArtist(posts)
+{
+    let dataFiltered = [];
+    albumsListHTML = [];
+    posts['album'].forEach(album=>
+    {
+        if ((album.artistName.toLowerCase().search(pTitle.toLowerCase())) >= 0){
+            dataFiltered.push(album);
+        }
+    });
+    albumsListHTML.push(`
+            <h3>Albums from ${pTitle}</h3>
+            <div class="albumList">
+            `);
+    for (let i = 0; i < dataFiltered.length; i++)
+    {
+        console.log(dataFiltered[i].title);
+            albumsListHTML.push(`
+            <a class="album" href="../post/?title=${dataFiltered[i].title}&type=album">
+                <p class="albumTitle">${dataFiltered[i].title}</p><p class="albumDate">${dataFiltered[i].date}</p>
+            </a>
+            `)
+    }
+    albumsListHTML.push(`
+            </div>
+            `);
+    return albumsListHTML;
+}
+function updateArtistReview(posts){
+    let eventsHTML = getEventsFromArtist();
+    let albumsHTML = getAlbumsFromArtist(posts);
+    
     let postHTML = [];
     posts[pType].forEach(p => {
         console.log(`comparing ${p.title} vs ${pTitle}`)
@@ -96,6 +133,9 @@ function updateArtistReview(posts){
                 <p class="genre">${p.genre}</p>
                 <p class="locale">${p.locale}</p>
             </div>
+            <div class="mainInfo">
+                <p class="highlight">${p.highlight}</p>
+            </div>
             `);
             if (p.review)
             {
@@ -108,13 +148,17 @@ function updateArtistReview(posts){
                 postHTML.push(`
                 <div class="review unreviewed">
                     <h2>Unreviewed</h2>
-                    <p>This page exists to collect information while a written review is pending</p>
+                    <p>This page exists to collect information while a written review from the Off-Bank team is pending</p>
                 </div>
                 `)
             }
-            if (reviewHTML.length > 2)
+            if (eventsHTML.length > 2)
             {
-                postHTML.push(reviewHTML.join(""))
+                postHTML.push(eventsHTML.join(""))
+            }
+            if (albumsHTML.length > 2)
+            {
+                postHTML.push(albumsHTML.join(""))
             }
             else
             {
@@ -205,7 +249,7 @@ function updateVenueReview(posts){
                 postHTML.push(`
                 <div class="review unreviewed">
                     <h2>Unreviewed</h2>
-                    <p>This page exists to collect information while a written review is pending</p>
+                    <p>This page exists to collect information while a written review from the Off-Bank teaam is pending</p>
                 </div>
                 `)
             }
@@ -308,7 +352,7 @@ function updateAlbumReview(posts){
                 postHTML.push(`
                 <div class="review unreviewed">
                     <h2>Unreviewed</h2>
-                    <p>This page exists to collect information while a written review is pending</p>
+                    <p>This page exists to collect information while a written review from the Off-bank Team is pending</p>
                 </div>
                 `)
             }

@@ -17,6 +17,7 @@ body{
     height: 100vh;
     background-color: var(--body-bg);
     font-size: 18px;
+    font-family: "elza-narrow", sans-serif;
 }
 #wrapper{
     display: flex;
@@ -32,6 +33,9 @@ main{
     max-height: 100%;
     padding: 5rem 1rem 1rem 1rem;
     gap: 2rem;
+}
+strong{
+    font-weight: 800;
 }
 h1{
     font-size: calc(1rem * pow(1.3, 5));
