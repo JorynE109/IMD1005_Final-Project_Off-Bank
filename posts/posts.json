@@ -88,7 +88,7 @@
             "content": "This is the content of the entire article."
         },
         { 
-            "src": "../img/album/cliche.jpeg",
+            "src": "../img/album/cliche.JPEG",
             "title": "Cliché",
             "category": "Album",
             "albumType": "ep",
@@ -101,7 +101,7 @@
             "content": "This is the content of the entire article."
         },
         {
-            "src": "../img/album/rainy.jpeg",
+            "src": "../img/album/rainy.JPEG",
             "title": "Rainy",
             "category": "Album",
             "albumType": "ep",
