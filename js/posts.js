@@ -106,7 +106,7 @@ function productSelected(category){
     fetchItems(1);
     localStorage.setItem("postType", postType);
     //updateDefaultButton();
-    //updateActiveButton();
+    updateActiveButton();
 }
 // function updateDefaultButton(){
 //     defaultButton.textContent = postType;
@@ -169,18 +169,18 @@ function searchItems(){
     });
     if (postsHolderHTML.length > 0){
         $postsHolder.innerHTML = postsHolderHTML.join("");
-        localStorage.setItem('searchResult',postsHolderHTML);
+        localStorage.setItem('searchResult',postsHolderHTML.join(""));
     }else{
         const noResMsg = `
         <div class="no-results-message">
             <h3>No Results</h3>
             <p>Search again or check out a category:</p>
             <div class="categorySelectionHolder">
-                <button onclick="productSelected('all')" class="categorySelection">All</button>
-                <button onclick="productSelected('article')" class="categorySelection">Articles</button>
-                <button onclick="productSelected('artist')" class="categorySelection">Artists</button>
-                <button onclick="productSelected('album')" class="categorySelection">Albums</button>
-                <button onclick="productSelected('venue')" class="categorySelection">Venues</button>
+                <button onclick="productSelected('all')" class="categorySelection" data-category="all">All</button>
+                <button onclick="productSelected('article')" class="categorySelection" data-category="article">Articles</button>
+                <button onclick="productSelected('artist')" class="categorySelection" data-category="artist">Artists</button>
+                <button onclick="productSelected('album')" class="categorySelection" data-category="album">Albums</button>
+                <button onclick="productSelected('venue')" class="categorySelection" data-category="venue">Venues</button>
             </div>
         </div>
         `;
