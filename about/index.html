@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="https://use.typekit.net/kxt1gte.css">
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link href="../css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/about.css">
 </head>
@@ -46,7 +47,7 @@ background-repeat: repeat;
             </div>
         </nav>
         <main>
-            <div class="ab-div">
+            <div class="ab-div josh-js" data-josh-anim-name="fadeInLeft" data-josh-duration="300ms">
                 <h1>About Off-Bank</h1>
                 <p>“What is there to do on a Saturday night in Ottawa?”, is a question every 20-something 
                     year-old in this city has asked themselves many, many times. As music lovers, we 
@@ -59,7 +60,7 @@ background-repeat: repeat;
                 </p>
                 <h2>Our Team</h2>
                 <div class="bioSection">
-                    <div class="bio">
+                    <div class="bio josh-js" data-josh-anim-name="fadeInUp" data-josh-duration="300ms">
                         <div class="imgHolder">
                             <picture>
                                 <img
@@ -81,7 +82,7 @@ background-repeat: repeat;
                             <p class="favGenre">Genre I love: Goth</p>
                         </div>
                     </div>
-                    <div class="bio">
+                    <div class="bio josh-js" data-josh-anim-name="fadeInUp" data-josh-duration="300ms">
                         <div class="imgHolder"> 
                             <picture>
                                 <img
@@ -106,7 +107,7 @@ background-repeat: repeat;
                             <p class="favGenre">Genre I love: Punk</p>
                         </div>
                     </div>
-                     <div class="bio">
+                     <div class="bio josh-js" data-josh-anim-name="fadeInUp" data-josh-duration="300ms">
                         <div class="imgHolder">
                             <picture>
                                 <img
@@ -132,7 +133,7 @@ background-repeat: repeat;
                     </div>
                 </div>
             </div>
-            <section id="formHolder" class="form-section">
+            <section id="formHolder" class="form-section josh-js" data-josh-anim-name="fadeInRight" data-josh-duration="300ms">
                 <form name="contactForm">
                     <h2>Contact</h2>
                     <div class="form-question">
@@ -197,6 +198,10 @@ background-repeat: repeat;
             <p><a target="_blank" href="https://icons8.com/icons/all--style-material-sharp">Icons</a>by<a target="_blank" href="https://icons8.com">Icons8</a></p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/joshjs@1.0.0/dist/josh.min.js"></script>
+    <script>
+        const josh = new Josh({});
+    </script>
     <script src="../js/main.js"></script>
     <script src="../js/nav.js"></script>
 </body>

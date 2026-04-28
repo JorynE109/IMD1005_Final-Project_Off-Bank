@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="https://use.typekit.net/kxt1gte.css">
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/posts.css">
 </head>
@@ -62,7 +63,7 @@ background-repeat: repeat;
                 <button onclick="productSelected('venue')" class="categorySelection" data-category="venue">Venues</button>
             </div>
 
-            <div id="postsHolder">
+            <div id="postsHolder" class="josh-js" data-josh-anim-name="fadeInRight" data-josh-duration="300ms">
                 <div id="loadingDisp">
                     <img class="loadingGIF"
                         srcset="../img/icon/loading/loading-24.gif 24w,
@@ -91,6 +92,10 @@ background-repeat: repeat;
             <p><a target="_blank" href="https://icons8.com/icons/all--style-material-sharp">Icons</a>by<a target="_blank" href="https://icons8.com">Icons8</a></p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/joshjs@1.0.0/dist/josh.min.js"></script>
+    <script>
+        const josh = new Josh({});
+    </script>
     <script src="../js/main.js"></script>
     <script src="../js/nav.js"></script>
     <script src="../js/posts.js"></script>

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/kxt1gte.css">
     <link rel="stylesheet" href="https://use.typekit.net/kxt1gte.css">
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link href="./css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
@@ -53,18 +54,18 @@ background-repeat: repeat;
                 <h1>OFF-BANK</h1>
                 <p>Ottawa’s underground music scene</p>
             </section>
-            <section id="news">
+            <section id="news" class="josh-js" data-josh-anim-name="fadeInRight" data-josh-duration="300ms">
                 <div class="section-box"></div>
                 <h2>News</h2>
                 <sub>Stay caught up on upcoming events</sub>
                 <div id="newsDisplay"></div>
             </section>
-            <section id="recentPosts">
+            <section id="recentPosts" class="josh-js" data-josh-anim-name="fadeInRight" data-josh-duration="300ms">
                 <div class="section-box"></div>
                 <h2>Recent Posts</h2>
                 <div id="recentPostsDisplay"></div>
             </section>
-            <section id="artistHighlight">
+            <section id="artistHighlight" class="josh-js" data-josh-anim-name="fadeInRight" data-josh-duration="300ms">
                 <div class="section-box"></div>
                 <h2>Artist Highlight</h2>
                 <sub>Here’s an artist we want to spotlight</sub>
@@ -83,7 +84,11 @@ background-repeat: repeat;
             <p><a target="_blank" href="https://icons8.com/icons/all--style-material-sharp">Icons</a>by<a target="_blank" href="https://icons8.com">Icons8</a></p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/joshjs@1.0.0/dist/josh.min.js"></script>
     <script src="js/home.js"></script>
     <script src="js/nav-for-home.js"></script>
+    <script>
+        const josh = new Josh({});
+    </script>
 </body>
 </html>
